@@ -24,37 +24,43 @@ const Hero = () => {
           <a href="https://github.com/arifuzzaman01" target="blanc">
             <FaGithub size={35} />
           </a>
-          <a href="https://www.linkedin.com/in/arifuzzaman-rakib-32734a291/" target="blanc">
+          <a
+            href="https://www.linkedin.com/in/arifuzzaman-rakib-32734a291/"
+            target="blanc"
+          >
             {" "}
-            
             <FaLinkedin size={35} />
           </a>
-          <a href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"  target="blanc">
-           
+          <a
+            href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"
+            target="blanc"
+          >
             <FaFacebook size={35} />
           </a>
         </div>
-        <button className="btn btn-primary bg-[#98CD00] hover:bg-green-500 px-7 font-bold text-[18px]">
-          Resume
-        </button>
+        <a href="https://drive.google.com/file/d/1TVepQSsRIm0W3COVIa5YEOGJrIJCzpzP/view?usp=sharing" target="blanc">
+          <button className="btn btn-primary bg-[#98CD00] hover:bg-green-500 px-7 font-bold text-[18px]">
+            Resume
+          </button>
+        </a>
       </div>
       <div className="flex-1 flex md:justify-end items-center justify-center ">
         <GlareHover
-      glareColor="#ffffff"
-      glareOpacity={0.3}
-      glareAngle={-30}
-      glareSize={300}
-      transitionDuration={800}
-      playOnce={false}
+          glareColor="#ffffff"
+          glareOpacity={0.3}
+          glareAngle={-30}
+          glareSize={300}
+          transitionDuration={800}
+          playOnce={false}
         >
           <div className="bg-[#98CD00] border-4 border-white rounded-full flex  md:w-96 md:h-96 justify-center items-center overflow-hidden">
-          <img
-            className="w-full h-full object-cover rounded-full"
-            src={myImg}
-            alt="Profile"
-          />
-        </div>
-    </GlareHover>
+            <img
+              className="w-full h-full object-cover rounded-full"
+              src={myImg}
+              alt="Profile"
+            />
+          </div>
+        </GlareHover>
       </div>
     </div>
   );

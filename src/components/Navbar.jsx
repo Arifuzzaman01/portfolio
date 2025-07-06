@@ -59,7 +59,14 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{link}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-primary bg-[#98CD00]">Resume</a>
+        <a
+          href="https://drive.google.com/file/d/1TVepQSsRIm0W3COVIa5YEOGJrIJCzpzP/view?usp=sharing"
+          target="blanc"
+        >
+          <button className="btn btn-primary bg-[#98CD00] hover:bg-green-500 px-4 font-bold text-[18px]">
+            Resume
+          </button>
+        </a>
       </div>
     </div>
   );
