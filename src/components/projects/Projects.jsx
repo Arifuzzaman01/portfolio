@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     name: "ParcelXpress ",
-    status:"running project, no live link",
+    status: "running project, no live link",
     image: parcel,
     subTitle:
       "ParcelXpress is a full-stack parcel delivery management system where users can create, track, and manage parcels, make secure payments, and administrators can assign riders and manage roles.",
@@ -81,7 +81,7 @@ const Projects = () => {
   const closeModal = () => setSelectedProject(null);
 
   return (
-    <section className="bg-white md:py-10 py-5 ">
+    <section className="bg-neutral-content md:pt-10 pt-5 rounded-xl ">
       <div className="max-w-6xl mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-800">My Projects</h2>
       </div>
@@ -89,21 +89,21 @@ const Projects = () => {
       {/* Project cards */}
       <div className="  mx-auto">
         {projects.map((project) => (
-          <div
+          <div data-aos="flip-up"
             key={project.id}
-            className="bg-gray-100 rounded-xl shadow p-4 hover:shadow-lg border-4 border-[#98CD00] transition  my-5 flex flex-col md:flex-row gap-5 "
+            className=" rounded-xl shadow p-4 hover:shadow-xl border-b-4 border-gray-700 transition  my-5 flex flex-col md:flex-row gap-5 "
           >
             <img
               src={project.image}
               alt={project.name}
-              className="rounded-lg md:w-1/2 h-56 object-cover mb-4"
+              className="rounded-lg md:w-1/2 h-56 object-cover mb-4 hover:scale-105 transition-all duration-200 ease-in-out"
             />
-            <div className="space-y-3">
+            <div className="space-y-3 ">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
                 {project.name}
               </h3>
-              <p className="text-gray-500 ">{project.subTitle}</p>
-              <p className=" text-gray-600 mb-4">
+              <p className="text-gray-800 ">{project.subTitle}</p>
+              <p className=" text-gray-800 mb-4">
                 <span className="font-bold">Stack: </span>{" "}
                 {project.stack.join(", ")}
               </p>

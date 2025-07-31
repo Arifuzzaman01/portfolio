@@ -3,21 +3,21 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal footer-center bg-gradient-to-t from-green-300 text-base-content rounded p-10">
+    <footer className="flex flex-col justify-center items-center fap-5 footer-horizontal footer-center bg-neutral-content text-base-content p-5">
       <nav>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col py-5">
           <div className="flex gap-3">
-            <a className="text-[#98CD00]" href="https://github.com/arifuzzaman01" target="blanc">
+            <a className="text-black" href="https://github.com/arifuzzaman01" target="blanc">
               <FaGithub size={35} />
             </a>
-            <a className="text-[#98CD00]"
-              href="https://www.linkedin.com/in/arifuzzaman-rakib-32734a291/"
+            <a className="text-black"
+              href="https://www.linkedin.com/in/arifuzzaman01/"
               target="blanc"
             >
               {" "}
               <FaLinkedin size={35} />
             </a>
-            <a className="text-[#98CD00]"
+            <a className="text-black"
               href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"
               target="blanc"
             >
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p>
+        <p className="text-gray-700 ">
           Copyright © {new Date().getFullYear()} - All right reserved by Arifuzzaman Rakib
         </p>
       </aside>

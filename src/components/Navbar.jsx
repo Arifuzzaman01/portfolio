@@ -1,22 +1,24 @@
 import React from "react";
+import { IoMoonOutline, IoSunny } from "react-icons/io5";
+
 import { NavLink } from "react-router";
 
 const Navbar = () => {
   const link = (
     <>
-      <NavLink className="text-green-700 font-bold mx-2" to="/">
+      <NavLink className=" font-bold mx-2" to="/">
         Home
       </NavLink>
-      <NavLink className="text-green-700 font-bold mx-2" to="/about">
+      <NavLink className=" font-bold mx-2" to="/about">
         About Me
       </NavLink>
-      <NavLink className="text-green-700 font-bold mx-2" to="/skill">
+      <NavLink className=" font-bold mx-2" to="/skill">
         Skill
       </NavLink>
-      <NavLink className="text-green-700 font-bold mx-2" to="/project">
+      <NavLink className=" font-bold mx-2" to="/project">
         Project
       </NavLink>
-      <NavLink className="text-green-700 font-bold mx-2" to="/contact">
+      <NavLink className=" font-bold mx-2" to="/contact">
         Contact Me
       </NavLink>
     </>
@@ -59,10 +61,22 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{link}</ul>
       </div>
       <div className="navbar-end">
-        <a
-          href="https://drive.google.com/file/d/1TVepQSsRIm0W3COVIa5YEOGJrIJCzpzP/view?usp=sharing"
-          target="blanc"
-        >
+        <label className="swap swap-rotate mr-3">
+          {/* this hidden checkbox controls the state */}
+          <input
+            type="checkbox"
+            className="theme-controller"
+            value="lemonade"
+          />
+
+          {/* sun icon */}
+          <IoSunny size={24} className="swap-off fill-current" />
+
+          {/* moon icon */}
+          <IoMoonOutline size={24} className="swap-on  fill-current" />
+        </label>
+        <a href="https://docs.google.com/document/d/1c6pYt_RhTIi03e8of5fl1xXuYmSkII0RMH23TFjJnTA/edit?usp=drive_link">
+          {" "}
           <button className="btn btn-primary bg-[#98CD00] hover:bg-green-500 px-4 font-bold text-[18px]">
             Resume
           </button>

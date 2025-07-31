@@ -9,6 +9,7 @@ import Skills from "./components/skill/Skills.jsx";
 import Projects from "./components/projects/Projects.jsx";
 import Contact from "./components/contact/Contact.jsx";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +41,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <RouterProvider router={router}>
+      
+    </RouterProvider>
   </StrictMode>
 );

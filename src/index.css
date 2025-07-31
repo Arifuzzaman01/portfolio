@@ -1,4 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
- 
+
 /* #98CD00 */
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, lemonade, sunset;
+}
+/* @plugin "daisyui/theme" {
+
+  --color-primary: #98CD00 ;
+  
+} */

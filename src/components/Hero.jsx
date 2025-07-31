@@ -2,18 +2,27 @@ import React from "react";
 import myImg from "../assets/IMG_MY-removebg-preview.png";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import GlareHover from "./glareHover";
+import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
     <div className="md:flex justify-between min-h-[80vh] space-y-5">
       <div className="flex flex-col flex-1 justify-center items-center md:items-start space-y-5">
         <div>
-          <h2 className="text-xl font-bold ml-10 ">Hi There, This is</h2>
+          <h2 className="text-xl font-bold ml-7 ">Hi There, This is</h2>
           <h1 className="text-3xl md:text-5xl font-bold text-[#98CD00]">
-            Arifuzzaman Rakib
+            <Typewriter
+              words={["Arifuzzaman Rakib"]}
+              loop={true}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
           </h1>
         </div>
-        <h3 className="font-bold text-xl">FrontEnd Web Developer</h3>
+        <h3 className="font-bold text-2xl">MERN Stack Developer</h3>
 
         <p className="font-semibold text-justify">
           Hello! I am from Bangladesh , I can make and design the real-of-way
@@ -38,29 +47,32 @@ const Hero = () => {
             <FaFacebook size={35} />
           </a>
         </div>
-        <a href="https://drive.google.com/file/d/1TVepQSsRIm0W3COVIa5YEOGJrIJCzpzP/view?usp=sharing" target="blanc">
-          <button className="btn btn-primary bg-[#98CD00] hover:bg-green-500 px-7 font-bold text-[18px]">
+        <a
+          href="https://docs.google.com/document/d/1c6pYt_RhTIi03e8of5fl1xXuYmSkII0RMH23TFjJnTA/edit?usp=drive_link"
+          target="blanc"
+        >
+          <button className="btn btn-primary bg-gray-400 hover:bg-gray-500 hover:text-white px-7 font-bold text-[18px]">
             Resume
           </button>
         </a>
       </div>
       <div className="flex-1 flex md:justify-end items-center justify-center ">
-        <GlareHover
-          glareColor="#ffffff"
-          glareOpacity={0.3}
-          glareAngle={-30}
-          glareSize={300}
-          transitionDuration={800}
-          playOnce={false}
-        >
-          <div className="bg-[#98CD00] border-4 border-white rounded-full flex  md:w-96 md:h-96 justify-center items-center overflow-hidden">
+        <div className="bg-gray-400 border-4 border-white rounded-full flex w-88 h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden">
+          <GlareHover
+            glareColor="#ffffff"
+            glareOpacity={0.3}
+            glareAngle={-30}
+            glareSize={300}
+            transitionDuration={800}
+            playOnce={false}
+          >
             <img
-              className="w-full h-full object-cover rounded-full"
+              className="w-full h-full md:h-auto object-cover border-b-4 border-white  rounded-full"
               src={myImg}
               alt="Profile"
             />
-          </div>
-        </GlareHover>
+          </GlareHover>
+        </div>
       </div>
     </div>
   );
