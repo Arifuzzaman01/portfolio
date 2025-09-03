@@ -36,44 +36,89 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
         {/* Left Side: Contact Info */}
         <div
-          data-aos="flip-left"
-          className="space-y-4 text-gray-700 bg-neutral-content px-5 pt-5  flex-1 text-center rounded-2xl border-l-8 "
+          data-aos="fade-up"
+          className="space-y-4  text-gray-700 bg-neutral-content px-5 pt-5 flex flex-col justify-between  flex-1 text-center rounded-2xl border-l-8 "
         >
-          <h3 className="text-3xl font-bold">Personal Information</h3>
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>
-            <p className="text-gray-600">arifuzzamanar29@gmail.com</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">Phone</h3>
-            <p className="text-gray-600">+880 1339313060</p>
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              WhatsApp
-            </h3>
-            <p className="text-gray-600">+880 1853684161</p>
-          </div>
-          <div className=" flex justify-between">
-            <div className="flex">
-              <div className="w-16 h-16 bg-gray-500 hover:bg-white  rounded-bl-full rounded-tr-full"></div>
-              <div className="w-6 h-20 bg-gray-500 hover:bg-white  rounded-tr-[50%] rounded-tl-[50%]"></div>
-              <div className="w-16 h-16 bg-gray-500 hover:bg-white  rounded-br-full rounded-tl-full"></div>
+          
+            <div className="md:mt-8">
+              <h3 className="text-3xl font-bold">Personal Information</h3>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Email
+                </h3>
+                <p className="text-gray-600">arifuzzamanar29@gmail.com</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  Phone
+                </h3>
+                <p className="text-gray-600">+880 1339313060</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                  WhatsApp
+                </h3>
+                <p className="text-gray-600">+880 1853684161</p>
+              </div>
             </div>
-            <div className="md:flex hidden ">
-              <div className="w-16 h-16 bg-gray-500 hover:bg-white  rounded-bl-full rounded-tr-full"></div>
-              <div className="w-6 h-20 bg-gray-500 hover:bg-white  rounded-tr-[50%] rounded-tl-[50%]"></div>
-              <div className="w-16 h-16 bg-gray-500 hover:bg-white  rounded-br-full rounded-tl-full"></div>
+
+            <div>
+              <div className="flex justify-center ">
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full hidden sm:block">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full hidden sm:flex">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+            <div className="flex justify-center">
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+            </div>
+            </div>
+          
         </div>
 
         {/* Right Side: Contact Form */}
         <form
-          data-aos="flip-right"
+          data-aos="fade-up"
           ref={form}
           onSubmit={handleSubmit}
-          className="space-y-6 bg-white md:p-5 p-2 rounded-2xl flex-2"
+          className="space-y-6 delay-300 bg-white md:p-5 p-2 rounded-2xl flex-2"
         >
           <div>
             <label className="block mb-1 font-medium text-gray-700">
