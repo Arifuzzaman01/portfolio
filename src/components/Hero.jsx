@@ -4,6 +4,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import GlareHover from "./glareHover";
 import { Typewriter } from "react-simple-typewriter";
 
+
 const Hero = () => {
   return (
     <div className="md:flex justify-between min-h-[80vh] space-y-5">
@@ -57,7 +58,7 @@ const Hero = () => {
         </a>
       </div>
       <div className="flex-1 flex md:justify-end items-center justify-center ">
-        <div className="bg-gray-400 border-4 border-white rounded-full flex w-88 h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden">
+        <div className="bg-gray-400 border-8 border-white rounded-full flex w-88 h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden">
           <GlareHover
             glareColor="#ffffff"
             glareOpacity={0.3}

@@ -9,6 +9,7 @@ import Contact from "./contact/Contact";
 import Footer from "./Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import TreeSkill from "./TreeSkill";
 
 const Home = () => {
   useEffect(() => {
@@ -19,12 +20,13 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div className="w-11/12  mx-auto">
+      <div className="max-w-6xl  mx-auto">
         <Hero></Hero>
         <AboutMe />
         <Skills />
         <Projects />
         <Contact />
+        <TreeSkill />
       </div>
     </div>
   );

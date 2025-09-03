@@ -37,7 +37,7 @@ const Contact = () => {
         {/* Left Side: Contact Info */}
         <div
           data-aos="flip-left"
-          className="space-y-4 text-gray-700 bg-gray-300 px-5 pt-5  flex-1 text-center rounded-2xl border-l-8 relative"
+          className="space-y-4 text-gray-700 bg-neutral-content px-5 pt-5  flex-1 text-center rounded-2xl border-l-8 "
         >
           <h3 className="text-3xl font-bold">Personal Information</h3>
           <div>
