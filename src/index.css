@@ -3,7 +3,7 @@
 
 /* #98CD00 */
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, lemonade, sunset;
+  themes: forest --default, dark --autumn, lemonade, sunset;
 }
 /* @plugin "daisyui/theme" {
 

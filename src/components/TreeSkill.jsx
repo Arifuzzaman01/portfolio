@@ -11,7 +11,7 @@ const TreeSkill = () => {
   return (
     <div className="grid  md:grid-cols-2 gap-10 justify-items-center my-12">
       <div className=" border rounded-full p-14">
-        <div className="border-2 p-12 md:p-16  shadow-2xl shadow-gray-400 rounded-full rotate-180 md:-rotate-90 w-60 h-60  md:w-76 md:h-76 ">
+        <div className="border-2 p-12 md:p-16  shadow-2xl shadow-gray-400 rounded-full rotate-180 md:-rotate-90 w-60 h-60  md:w-76 md:h-76">
           <div className="border bg-gray-200 p-14 md:p-16  shadow-2xl rounded-full w-full h-full">
             <div className="border  md:p-16  shadow-2xl  rounded-full w-full h-full bg-gradient-to-tl from-white to-gray-200">
               <div
@@ -29,7 +29,9 @@ const TreeSkill = () => {
       <div className="border rounded-full p-14">
         <div className="border-2 p-12  md:p-16  shadow-2xl shadow-gray-400 rounded-full -rotate-90 md:rotate-45  w-60 h-60  md:w-76 md:h-76 ">
           <div className="border-2 bg-gray-200 p-14 md:p-16 shadow-2xl rounded-full w-full h-full">
-            <div className="border p-6 md:p-16  shadow-2xl  rounded-full w-full h-full bg-gradient-to-tl from-white to-gray-200"> Backend
+            <div className="border p-6 md:p-16  shadow-2xl  rounded-full w-full h-full bg-gradient-to-tl from-white to-gray-200">
+              {" "}
+              Backend
               <div
                 className="border bg-white p-14 rounded-full w-full h-full flex justify-center items-center "
                 style={{

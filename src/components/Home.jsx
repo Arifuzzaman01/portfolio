@@ -1,15 +1,17 @@
 import React, { useEffect } from "react";
-import Navbar from "./Navbar";
+
 import Hero from "./Hero";
-import Education from "./Education";
+
 import AboutMe from "./AboutMe";
 import Skills from "./skill/Skills";
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
-import Footer from "./Footer";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
-import TreeSkill from "./TreeSkill";
+
+import Skill2 from "./skill/Tools";
+import Frontend from "./skill/Frontend";
 
 const Home = () => {
   useEffect(() => {
@@ -26,7 +28,8 @@ const Home = () => {
         <Skills />
         <Projects />
         <Contact />
-        <TreeSkill />
+        
+        
       </div>
     </div>
   );
