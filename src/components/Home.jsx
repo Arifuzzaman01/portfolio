@@ -1,17 +1,11 @@
 import React, { useEffect } from "react";
-
 import Hero from "./Hero";
-
-import AboutMe from "./AboutMe";
 import Skills from "./skill/Skills";
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
-
 import Aos from "aos";
 import "aos/dist/aos.css";
-
-import Skill2 from "./skill/Tools";
-import Frontend from "./skill/Frontend";
+import GradientBorder from "./GradientBorder";
 
 const Home = () => {
   useEffect(() => {
@@ -24,12 +18,10 @@ const Home = () => {
     <div>
       <div className="max-w-6xl  mx-auto">
         <Hero></Hero>
-        <AboutMe />
+        <GradientBorder />
         <Skills />
         <Projects />
         <Contact />
-        
-        
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
   return (
-    <div className="md:flex justify-between min-h-[80vh] space-y-5">
+    <div className="md:flex justify-between py-10 space-y-5">
       <div className="flex flex-col flex-1 justify-center items-center md:items-start space-y-5">
         <div>
           <h2 className="text-xl font-bold ml-7 ">Hi There, This is</h2>

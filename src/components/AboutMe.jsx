@@ -12,8 +12,8 @@ const AboutMe = () => {
       transitionDuration={800}
       playOnce={false}
     >
-      <section className="bg-gray-50 dark:bg-gray-900 py-16 px-6 sm:px-10 w-full lg:px-20">
-        <div className="max-w-4xl mx-auto text-center">
+      
+        <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
             About Me
           </h2>
@@ -50,7 +50,7 @@ const AboutMe = () => {
             amazing together!
           </p>
         </div>
-      </section>
+      
     </GlareHover>
   );
 };

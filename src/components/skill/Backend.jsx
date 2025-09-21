@@ -2,7 +2,7 @@ import { cn } from '../../lib/utils';
 import React, { useRef } from 'react';
 import { AnimatedBeam , Circle} from '../animated-beam/Beam';
 import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiExpress, SiMongodb, SiNodemon } from 'react-icons/si';
+import { SiExpress, SiJsonwebtokens, SiMongodb, SiNodemon } from 'react-icons/si';
 import { FaNodeJs } from 'react-icons/fa';
 
 export default function Backend({ className }) {
@@ -46,7 +46,7 @@ export default function Backend({ className }) {
             <SiNodemon size={32} className=' text-black font-bold'  />
           </Circle>
           <Circle className="p-2" ref={div5Ref}>
-            <p  className=' text-black font-bold' >...</p>
+            <SiJsonwebtokens size={32} className=' text-black font-bold' />
           </Circle>
         </div>
       </div>

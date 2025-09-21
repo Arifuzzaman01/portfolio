@@ -10,3 +10,43 @@
   --color-primary: #98CD00 ;
   
 } */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS custom property for animation */
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* gradient border class */
+.gradient-border {
+  --border-angle: 0deg;
+  padding: 2px; /* border thickness */
+  border-radius: 1rem;
+  background: 
+    linear-gradient(45deg, #080b11, #1e293b 50%, #172033) padding-box, 
+    conic-gradient(from var(--border-angle), rgba(148,163,184,0.48) 80%, #6366f1 86%, #93c5fd 90%, #6366f1 94%, rgba(148,163,184,0.48)) border-box;
+  border: 4px solid transparent;
+}
+
+/* inner content card */
+.gradient-border > .card {
+  border-radius: calc(1rem - 2px);
+  background-color: #0f172a; /* dark card bg */
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Tailwind animation keyframe */
+@keyframes border {
+  to { --border-angle: 360deg; }
+}
+
+/* optional utility class for animation */
+.animate-border {
+  animation: border 4s linear infinite;
+}
+

@@ -1,12 +1,11 @@
 import React, { useRef } from "react";
 import { AnimatedBeam, Circle } from "../animated-beam/Beam";
 import { FaFigma, FaReact } from "react-icons/fa";
-import {  IoLogoVercel } from "react-icons/io5";
-import {  SiNetlify,  } from "react-icons/si";
+import { IoLogoVercel } from "react-icons/io5";
+import { SiNetlify } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import surge from "../../assets/surge-logo.svg"
-import pisxo from "../../assets/pisxologo.png"
-
+import surge from "../../assets/surge-logo.svg";
+import pisxo from "../../assets/pisxologo.png";
 
 export default function Tools() {
   const containerRef = useRef(null);
@@ -25,33 +24,31 @@ export default function Tools() {
       <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
         <div className="flex flex-row items-center justify-between ">
           <Circle ref={div1Ref}>
-            <VscVscode size={32} className=' text-black font-bold' />
+            <VscVscode size={32} className=" text-black font-bold" />
           </Circle>
           <Circle ref={div4Ref} className="h-20 w-20 p-3 ">
             <p className="font-bold text-gray-800">Tools</p>
           </Circle>
           <Circle ref={div5Ref} className="p-2">
-            <IoLogoVercel size={32} className=' text-black font-bold' />
+            <IoLogoVercel size={32} className=" text-black font-bold" />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div2Ref} className="p-2">
-            <FaFigma size={32} className=' text-black font-bold' />
+            <FaFigma size={32} className=" text-black font-bold" />
           </Circle>
-          
+
           <Circle ref={div6Ref} className="p-2">
-           <SiNetlify size={32} className=' text-black font-bold'  />
+            <SiNetlify size={32} className=" text-black font-bold" />
           </Circle>
-        </div>
-        <div className="flex flex-row items-center justify-between">
-          <Circle ref={div3Ref} className="p-2">
-            
-<img className="w-10 h-8" src={pisxo} alt="" />
+           <Circle ref={div3Ref} className="p-2">
+            <img className="w-10 h-8" src={pisxo} alt="" />
           </Circle>
           <Circle ref={div7Ref} className="p-2">
             <img className="w-10 h-8" src={surge} alt="" />
           </Circle>
         </div>
+        
       </div>
 
       <AnimatedBeam
@@ -76,7 +73,7 @@ export default function Tools() {
         containerRef={containerRef}
         fromRef={div3Ref}
         toRef={div4Ref}
-        curvature={75}
+        curvature={10}
         endYOffset={10}
         dotted
       />
@@ -104,8 +101,8 @@ export default function Tools() {
         containerRef={containerRef}
         fromRef={div7Ref}
         toRef={div4Ref}
-        curvature={75}
-        endYOffset={10}
+        curvature={10}
+        endYOffset={0}
         reverse
         dotted
         gradientStartColor="#48b0d9"
