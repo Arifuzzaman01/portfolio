@@ -6,6 +6,7 @@ import Contact from "./contact/Contact";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import GradientBorder from "./GradientBorder";
+import Button from "../lib/utils/Button";
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +23,7 @@ const Home = () => {
         <Skills />
         <Projects />
         <Contact />
+        <Button text={"click here"}/>
       </div>
     </div>
   );

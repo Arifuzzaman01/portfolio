@@ -2,6 +2,7 @@ import React from "react";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
 
 import { NavLink } from "react-router";
+import Button from "../lib/utils/Button";
 
 const Navbar = () => {
   const link = (
@@ -77,9 +78,7 @@ const Navbar = () => {
         </label>
         <a href="https://docs.google.com/document/d/1c6pYt_RhTIi03e8of5fl1xXuYmSkII0RMH23TFjJnTA/edit?usp=drive_link">
           {" "}
-          <button className="btn btn-primary bg-[#98CD00] hover:bg-green-500 px-4 font-bold text-[18px]">
-            Resume
-          </button>
+          <Button text={'Resume'}/>
         </a>
       </div>
     </div>
