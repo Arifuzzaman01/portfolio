@@ -1,0 +1,86 @@
+{
+  "frontend": [
+    {
+      "id": 1,
+      "title": "HTML 5",
+      "icon": "FaHtml5"
+    },
+    {
+      "id": 2,
+      "title": "CSS 3",
+      "icon": "FaCss3Alt"
+    },
+    {
+      "id": 3,
+      "title": "Tailwind CSS",
+      "icon": "SiTailwindcss"
+    },
+    {
+      "id": 4,
+      "title": "Bootstrap",
+      "icon": "FaBootstrap"
+    },
+    {
+      "id": 5,
+      "title": "DaisyUI",
+      "icon": "SiDaisyui"
+    },
+    {
+      "id": 6,
+      "title": "React",
+      "icon": "FaReact"
+    },
+    {
+      "id": 7,
+      "title": "Next.js",
+      "icon": "SiNextdotjs"
+    },
+    {
+      "id": 8,
+      "title": "Firebase Auth",
+      "icon": "SiFirebase"
+    },
+    {
+      "id": 9,
+      "title": "Next Auth",
+      "icon": "TbBrandOauth"
+    },
+    {
+      "id": 10,
+      "title": "Axios",
+      "icon": "SiAxios"
+    },
+    {
+      "id": 11,
+      "title": "Stripe",
+      "icon": "SiStripe"
+    }
+  ],
+  "backend": [
+    {
+      "id": 1,
+      "title": "Express",
+      "icon": "SiExpress"
+    },
+    {
+      "id": 2,
+      "title": "Node.js",
+      "icon": "FaNodeJs"
+    },
+    {
+      "id": 3,
+      "title": "MongoDB",
+      "icon": "SiMongodb"
+    },
+    {
+      "id": 4,
+      "title": "Nodemon",
+      "icon": "SiNodemon"
+    },
+    {
+      "id": 5,
+      "title": "JWT",
+      "icon": "SiJsonwebtokens"
+    }
+  ]
+}

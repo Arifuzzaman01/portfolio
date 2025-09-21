@@ -23,7 +23,7 @@ const Home = () => {
         <Skills />
         <Projects />
         <Contact />
-        <Button text={"click here"}/>
+        
       </div>
     </div>
   );
