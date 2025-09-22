@@ -8,10 +8,10 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <div className="md:flex justify-between py-10 space-y-5">
+    <div className="md:flex justify-between pb-10 space-y-5">
       <div className="flex flex-col flex-1 justify-center items-center md:items-start space-y-5">
         <div>
-          <h2 className="text-xl font-bold ml-7 ">Hi There, This is</h2>
+          <h2 className="text-xl font-bold ml-7 ">Hi There, I am</h2>
           <h1 className="text-3xl md:text-5xl font-bold color-primary">
             <Typewriter
               words={["Arifuzzaman Rakib"]}
@@ -27,7 +27,7 @@ const Hero = () => {
         <h3 className="font-bold text-2xl">MERN Stack Developer</h3>
 
         <p className="font-semibold text-justify">
-          Hello! I am from Bangladesh , I can make and design the real-of-way
+         I am from Bangladesh , I can make and design the real-of-way
           website. Each website is the user friendly which can easily use to
           user.{" "}
         </p>
@@ -50,7 +50,7 @@ const Hero = () => {
           </a>
         </div>
         <a
-          href="https://docs.google.com/document/d/1c6pYt_RhTIi03e8of5fl1xXuYmSkII0RMH23TFjJnTA/edit?usp=drive_link"
+          href="https://drive.google.com/file/d/1mlJ_ibnzMpAZ1U9hZ-p6B7TET6vEpdh0/view?usp=sharing"
           target="blanc"
         >
           <Button text={"Resume"} />

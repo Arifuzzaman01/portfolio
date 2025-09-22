@@ -26,6 +26,11 @@
       "icon": "SiDaisyui"
     },
     {
+      "id": 5,
+      "title": "JavaScript",
+      "icon": "TbBrandJavascript"
+    },
+    {
       "id": 6,
       "title": "React",
       "icon": "FaReact"

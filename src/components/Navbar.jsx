@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
-
+import logo from "../assets/myLogo.png"
 import { NavLink } from "react-router";
 import Button from "../lib/utils/Button";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm border-b-2 border-green-500 sticky top-0 z-50">
+    <div className="navbar bg-base-100 shadow-sm border-b-2 border-[#9112BC] sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,10 +52,8 @@ const Navbar = () => {
             {link}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl text-[#98CD00]">
-          <span className="hidden md:block -mr-[6px] text-green-600">Arif</span>{" "}
-          <span className="hidden md:block">uzzaman</span>{" "}
-          <span className="md:hidden">AR</span>
+        <a className="w-20 h-10">
+          <img src={logo} alt="logo" className="w-20 h-auto" />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -76,9 +74,12 @@ const Navbar = () => {
           {/* moon icon */}
           <IoMoonOutline size={24} className="swap-on  fill-current" />
         </label>
-        <a href="https://docs.google.com/document/d/1c6pYt_RhTIi03e8of5fl1xXuYmSkII0RMH23TFjJnTA/edit?usp=drive_link">
+        <a
+          href="https://drive.google.com/file/d/1mlJ_ibnzMpAZ1U9hZ-p6B7TET6vEpdh0/view?usp=sharing"
+          target="blanc"
+        >
           {" "}
-          <Button text={'Resume'}/>
+          <Button text={"Resume"} />
         </a>
       </div>
     </div>

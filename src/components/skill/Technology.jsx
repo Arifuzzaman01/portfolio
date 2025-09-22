@@ -22,7 +22,7 @@ import { motion } from "framer-motion";
 
 import React, { useEffect, useRef, useState } from "react";
 import Tools from "./Tools";
-import { TbBrandOauth } from "react-icons/tb";
+import { TbBrandJavascript, TbBrandOauth } from "react-icons/tb";
 export default function Technology() {
   const [skills, setSkills] = useState([]);
 
@@ -47,7 +47,8 @@ export default function Technology() {
     SiMongodb: SiMongodb,
     SiNodemon: SiNodemon,
     SiJsonwebtokens: SiJsonwebtokens,
-    TbBrandOauth: TbBrandOauth
+    TbBrandOauth: TbBrandOauth,
+    TbBrandJavascript: TbBrandJavascript
   };
   const iconVariants = {
     hover: {
@@ -85,7 +86,7 @@ export default function Technology() {
         onMouseLeave={() => setIsHovered(false)}
         ref={boxWrapper}
         className={cn(
-          "group relative rounded-lg  p-[2px]  overflow-hidden w-fit mx-auto"
+          "group relative rounded-lg  p-[2px]  overflow-hidden w-fit mx-auto container"
         )}
       >
         {isHovered && (
@@ -115,37 +116,11 @@ export default function Technology() {
             <h1 className="text-center text-3xl font-bold color-primary">
               Frontend
             </h1>
-            <div className="relative text-center z-10 px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover   h-full mx-auto flex flex-wrap gap-4">
+            <div className="relative text-center z-10 px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover   h-full mx-auto flex flex-wrap gap-3 justify-center">
               {skills &&
                 skills.frontend &&
                 skills.frontend.map((skill) => {
-                  const IconComponent = iconMap[skill.icon]; // get actual component
-                  return (
-                    <motion.div
-                      key={skill.id}
-                      className="border-1 rounded-[8px] p-5 flex items-center gap-3 hover:scale-105 transition-all duration-200"
-                      whileHover="hover"
-                    >
-                      {IconComponent && (
-                        <motion.div variants={iconVariants}>
-                          <IconComponent className="text-3xl color-primary" />
-                        </motion.div>
-                      )}
-                      <h4>{skill.title}</h4>
-                    </motion.div>
-                  );
-                })}
-            </div>
-          </div>
-          <div>
-            <h1 className="text-center text-3xl font-bold color-primary">
-             Backend
-            </h1>
-            <div className="relative text-center z-10 px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover    mx-auto flex flex-wrap gap-4">
-              {skills &&
-                skills.frontend &&
-                skills.backend.map((skill) => {
-                  const IconComponent = iconMap[skill.icon]; // get actual component
+                  const IconComponent = iconMap[skill.icon]; 
                   return (
                     <motion.div
                       key={skill.id}
@@ -163,7 +138,33 @@ export default function Technology() {
                 })}
             </div>
           </div>
-          <div className="col-span-2 w-3/4 mx-auto my-5 ">
+          <div>
+            <h1 className="text-center text-3xl font-bold color-primary">
+             Backend
+            </h1>
+            <div className="relative text-center z-10 px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover mx-auto flex flex-wrap gap-4 justify-center">
+              {skills &&
+                skills.frontend &&
+                skills.backend.map((skill) => {
+                  const IconComponent = iconMap[skill.icon]; 
+                  return (
+                    <motion.div
+                      key={skill.id}
+                      className="border-1 rounded-[8px] p-5 flex items-center gap-3 hover:scale-105 transition-all duration-200 h-fit"
+                      whileHover="hover"
+                    >
+                      {IconComponent && (
+                        <motion.div variants={iconVariants}>
+                          <IconComponent className="text-3xl color-primary" />
+                        </motion.div>
+                      )}
+                      <h4>{skill.title}</h4>
+                    </motion.div>
+                  );
+                })}
+            </div>
+          </div>
+          <div className="col-span-2 md:w-3/4 mx-auto my-5 ">
             <Tools iconVariants={iconVariants} />
           </div>
         </div>
