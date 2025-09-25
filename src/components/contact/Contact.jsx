@@ -118,7 +118,7 @@ const Contact = () => {
           data-aos="fade-up"
           ref={form}
           onSubmit={handleSubmit}
-          className="space-y-6 delay-300 bg-white md:p-5 p-2 rounded-2xl flex-2"
+          className="space-y-6 delay-300  md:p-5 p-2 rounded-2xl flex-2"
         >
           <div>
             <label className="block mb-1 font-medium text-gray-700">
@@ -158,7 +158,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="btn-block bg-gray-400 text-white px-6 py-2 rounded hover:bg-green-500 transition"
+            className="btn-block bg-color text-white px-6 py-2 rounded hover:bg-green-500 transition"
           >
             Send Message
           </button>
