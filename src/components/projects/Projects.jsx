@@ -30,7 +30,8 @@ const projects = [
     githubServer: "https://github.com/Arifuzzaman01/easy-buy-server",
     challenges:
       "Protected routes, admin logic, dashboard UI control,user Role, mongodb aggregation etc.",
-    improvements: " There will be all kinds of features, adding real-time communication,  and analytics dashboard.",
+    improvements:
+      " There will be all kinds of features, adding real-time communication,  and analytics dashboard.",
   },
 
   {
@@ -113,9 +114,8 @@ const Projects = () => {
                   </div>
                 ))}
               </p>
-              <button onClick={() => openModal(project)}>
-                <Button text={"View More"} />
-              </button>
+
+              <Button btnClick={() => openModal(project)} text={"View More"} />
             </div>
           </div>
         ))}
@@ -123,8 +123,8 @@ const Projects = () => {
 
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className=" max-w-3xl w-full rounded-lg p-6 relative overflow-y-auto max-h-[90vh]">
+        <div className="fixed inset-0 bg-black text-start  text-gray-200 bg-opacity-50 flex items-center justify-center z-50">
+          <div className="border-4 border-gray-500 max-w-3xl w-full rounded-lg p-6 relative overflow-y-auto max-h-[90vh]">
             <img
               src={selectedProject.image}
               alt={selectedProject.name}
@@ -133,7 +133,7 @@ const Projects = () => {
             <h2 className="text-2xl font-bold text-gray-500 mb-2">
               {selectedProject.name}
             </h2>
-            <p className="mb-2">
+            <p className="mb-2 text-start">
               <strong>Tech Stack:</strong> {selectedProject.stack.join(", ")}
             </p>
             <p className="mb-2">

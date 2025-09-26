@@ -9,7 +9,7 @@ const MainLayout = () => {
     return (
         <div className='space-y-10'>
             <Navbar  ></Navbar>
-            <div className='w-11/12 mx-auto '>
+            <div className=''>
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>

@@ -37,10 +37,10 @@ const Contact = () => {
         {/* Left Side: Contact Info */}
         <div
           data-aos="fade-up"
-          className="space-y-4  text-gray-700 bg-neutral-content px-5 pt-5 flex flex-col justify-between  flex-1 text-center rounded-2xl border-l-8 "
+          className="bg-base-200 text-start flex flex-col justify-between "
         >
           
-            <div className="md:mt-8">
+            <div className=" bg-gray-200 m-2 rounded-2xl ">
               <h3 className="text-3xl font-bold">Personal Information</h3>
               <div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -64,50 +64,50 @@ const Contact = () => {
 
             <div>
               <div className="flex justify-center ">
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full hidden sm:block">
-                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full hidden sm:block">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
                   </div>
                 </div>
               </div>
 
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full hidden sm:flex">
-                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full hidden sm:flex">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
                   </div>
                 </div>
               </div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full">
-                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted e rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted rounded-t-full">
+                    <div className="h-8 w-8 mx-auto mt-2 border-t-2 border-dotted bg-[#9112BC]  rounded-full"></div>
                   </div>
                 </div>
               </div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full">
-                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
                   </div>
                 </div>
               </div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full">
-                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted border-white rounded-t-full">
-                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted border-white rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full **:border-[#9112BC]">
+                <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted rounded-t-full">
+                  <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted rounded-t-full">
+                    <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
-              <div className="h-10 w-20 border-t-2 border-dotted border-white rounded-t-full"></div>
+            <div className="flex justify-center *:nth-[5]:border-[#9112BC] *:nth-[2]:border-[#9112BC]">
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
             </div>
             </div>
           
@@ -129,7 +129,7 @@ const Contact = () => {
               name="name"
               placeholder="Your Full Name"
               required
-              className="w-full border-b-2 border-gray-700 px-4 py-2 rounded focus:outline-none focus:ring focus:border-blue-400"
+              className="w-full border-b-2 border-gray-700 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
             />
           </div>
           <div>
@@ -141,7 +141,7 @@ const Contact = () => {
               name="userEmail"
               placeholder="(e.g info@gmail.com)"
               required
-              className="w-full border-b-2 border-gray-600 px-4 py-2 rounded focus:outline-none focus:ring focus:border-blue-400"
+              className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
             />
           </div>
           <div>
@@ -153,12 +153,12 @@ const Contact = () => {
               rows="3"
               required
               placeholder="Your Message"
-              className="w-full border-b-2 border-gray-600 px-4 py-2 rounded focus:outline-none focus:ring focus:border-blue-400"
+              className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
             ></textarea>
           </div>
           <button
             type="submit"
-            className="btn-block bg-color text-white px-6 py-2 rounded hover:bg-green-500 transition"
+            className="btn-block bg-color text-white px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
           >
             Send Message
           </button>

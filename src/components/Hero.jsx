@@ -5,6 +5,7 @@ import GlareHover from "./glareHover";
 import { Typewriter } from "react-simple-typewriter";
 import Button from "../lib/utils/Button";
 import { FaXTwitter } from "react-icons/fa6";
+import { BsLinkedin } from "react-icons/bs";
 
 const Hero = () => {
   return (
@@ -37,7 +38,7 @@ const Hero = () => {
           </a>
           <a href="https://www.linkedin.com/in/arifuzzaman02/" target="blanc">
             {" "}
-            <FaLinkedin size={35} color="#9112BC" className=" rounded-full" />
+            <BsLinkedin  size={35} color="#9112BC" className=" rounded-full" />
           </a>
           <a
             href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"

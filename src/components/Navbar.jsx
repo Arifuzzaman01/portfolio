@@ -7,19 +7,19 @@ import Button from "../lib/utils/Button";
 const Navbar = () => {
   const link = (
     <>
-      <NavLink className=" font-bold mx-2" to="/">
+      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/">
         Home
       </NavLink>
-      <NavLink className=" font-bold mx-2" to="/about">
+      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/about">
         About Me
       </NavLink>
-      <NavLink className=" font-bold mx-2" to="/skill">
+      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/skill">
         Skill
       </NavLink>
-      <NavLink className=" font-bold mx-2" to="/project">
+      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/project">
         Project
       </NavLink>
-      <NavLink className=" font-bold mx-2" to="/contact">
+      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/contact">
         Contact Me
       </NavLink>
     </>
