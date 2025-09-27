@@ -10,10 +10,10 @@ import { BsLinkedin } from "react-icons/bs";
 const Hero = () => {
   return (
     <div className="md:flex justify-between pb-10 space-y-5">
-      <div className="flex flex-col flex-1 justify-center items-center md:items-start space-y-5">
+      <div className="flex flex-col flex-1 justify-center items-center md:items-start space-y-5 p-2">
         <div>
           <h2 className="text-xl font-bold ml-7 ">Hi There, I am</h2>
-          <h1 className="text-3xl md:text-5xl font-bold color-primary">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold color-primary">
             <Typewriter
               words={["Arifuzzaman Rakib"]}
               loop={true}

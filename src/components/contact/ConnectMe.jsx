@@ -64,15 +64,7 @@ const ConnectMe = () => {
       bgColor: 'bg-purple-100',
       copyable: false
     },
-    // {
-    //   icon: User,
-    //   label: 'Portfolio',
-    //   value: 'Visit Portfolio',
-    //   href: contactInfo.portfolio,
-    //   color: 'text-indigo-600',
-    //   bgColor: 'bg-indigo-100',
-    //   copyable: false
-    // }
+    
   ];
 
   return (
@@ -85,7 +77,7 @@ const ConnectMe = () => {
         {contactMethods.map((method, index) => (
           <div
             key={index}
-            className="flex items-center justify-between p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-200"
+            className="md:flex items-center justify-between p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-200"
           >
             <div className="flex items-center space-x-3 flex-1">
               <div className={`p-2 rounded-full ${method.bgColor}`}>
@@ -100,7 +92,7 @@ const ConnectMe = () => {
               </div>
             </div>
 
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center justify-end-safe  space-x-2 mt-2 md:mt-0">
               {method.copyable && (
                 <button
                   onClick={() => handleCopy(method.value, method.label)}
@@ -119,7 +111,7 @@ const ConnectMe = () => {
                 href={method.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-4 py-2 rounded-lg font-medium text-white transition-colors duration-200 ${
+                className={`px-4 py-1 md:py-2 rounded-lg font-medium text-white transition-colors duration-200 ${
                   method.label === 'Phone' ? 'bg-blue-600 hover:bg-blue-700' :
                   method.label === 'Email' ? 'bg-blue-600 hover:bg-blue-700' :
                   method.label === 'WhatsApp' ? 'bg-blue-600 hover:bg-blue-700' :

@@ -68,7 +68,7 @@ export default function index() {
           }}
         ></div>
 
-        <div className="relative text-center z-10 px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover  h-full mx-auto">
+        <div className="relative text-center z-10 md:px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover  h-full mx-auto">
           <div>
             <Hero />
             <AboutMe />

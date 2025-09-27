@@ -38,11 +38,9 @@ const Contact = () => {
         {/* Left Side: Contact Info */}
         <div
           data-aos="fade-up"
-          className="bg-base-200 text-start flex flex-col justify-between "
+          className=" bg-color m-2 rounded-2xl text-start flex flex-col justify-between "
         >
-          <div className=" bg-color m-2 rounded-2xl ">
-            <ConnectMe />
-          </div>
+          <ConnectMe />
         </div>
 
         {/* Right Side: Contact Form */}
@@ -54,9 +52,7 @@ const Contact = () => {
             className="space-y-6 delay-300  md:p-5 p-2 rounded-2xl flex-2"
           >
             <div>
-              <label className="block mb-1 font-medium ">
-                Your Name
-              </label>
+              <label className="block mb-1 font-medium ">Your Name</label>
               <input
                 type="text"
                 name="name"
@@ -66,9 +62,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium ">
-                Your Email
-              </label>
+              <label className="block mb-1 font-medium ">Your Email</label>
               <input
                 type="email"
                 name="userEmail"
@@ -78,9 +72,7 @@ const Contact = () => {
               />
             </div>
             <div>
-              <label className="block mb-1 font-medium ">
-                Your Message
-              </label>
+              <label className="block mb-1 font-medium ">Your Message</label>
               <textarea
                 name="message"
                 rows="4"
@@ -96,7 +88,7 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-          <div >
+          <div>
             <div className="flex justify-center ">
               <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full hidden sm:block">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
@@ -106,7 +98,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full hidden sm:flex">
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full ">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
                     <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
@@ -127,7 +119,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full **:border-[#9112BC]">
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full **:border-[#9112BC] hidden sm:flex">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted rounded-t-full">
                     <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
