@@ -6,6 +6,7 @@ import Skill from "./skill/Skills";
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
 import Aos from "aos";
+import Education from "./Education";
 export default function index() {
   const boxWrapper = useRef(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -68,12 +69,13 @@ export default function index() {
           }}
         ></div>
 
-        <div className="relative text-center z-10 md:px-8 py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover  h-full mx-auto">
+        <div className="relative text-center z-10 md:px-8  pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover  h-full mx-auto">
           <div>
             <Hero />
             <AboutMe />
             <Skill />
             <Projects />
+            <Education/>
             <Contact />
           </div>
         </div>

@@ -24,7 +24,7 @@ const ConnectMe = () => {
   const handleCopy = (text, field) => {
     navigator.clipboard.writeText(text);
     setCopiedField(field);
-    setTimeout(() => setCopiedField(null), 2000);
+    setTimeout(() => setCopiedField(null), 3000);
   };
 
   const contactMethods = [
@@ -68,7 +68,7 @@ const ConnectMe = () => {
   ];
 
   return (
-    <div className=" p-6  rounded-xl shadow-lg text-gray-50">
+    <div className="p-3 lg:p-5  rounded-xl shadow-lg text-gray-50">
       <h2 className="text-2xl font-bold  mb-6 text-center">
         Connect With Me
       </h2>
@@ -77,7 +77,7 @@ const ConnectMe = () => {
         {contactMethods.map((method, index) => (
           <div
             key={index}
-            className="md:flex items-center justify-between p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-200"
+            className="lg:flex items-center justify-between p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-200"
           >
             <div className="flex items-center space-x-3 flex-1">
               <div className={`p-2 rounded-full ${method.bgColor}`}>

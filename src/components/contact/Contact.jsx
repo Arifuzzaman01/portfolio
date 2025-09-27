@@ -34,17 +34,17 @@ const Contact = () => {
   return (
     <div className=" mx-auto  rounded-2xl md:px-10 px-4">
       <h2 className="text-3xl font-bold text-center  py-10">Contact Me</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 ">
         {/* Left Side: Contact Info */}
         <div
           data-aos="fade-up"
-          className=" bg-color m-2 rounded-2xl text-start flex flex-col justify-between "
+          className=" bg-color m-2 mb-0 rounded-2xl text-start flex flex-col justify-between "
         >
           <ConnectMe />
         </div>
 
         {/* Right Side: Contact Form */}
-        <div className="flex flex-col justify-between ">
+        <div className="flex flex-col justify-center mb-5 ">
           <form
             data-aos="fade-up"
             ref={form}
