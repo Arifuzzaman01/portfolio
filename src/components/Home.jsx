@@ -53,7 +53,7 @@ export default function index() {
               background: `
             radial-gradient(
               250px circle at ${overlayColor.x}px ${overlayColor.y}px,
-              rgba(255, 255, 255, 0.12),
+              rgba(255, 255, 255, 0.14),
               transparent 80%
             )
           `,

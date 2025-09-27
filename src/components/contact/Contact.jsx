@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ConnectMe from "./ConnectMe";
 
 const Contact = () => {
   const form = useRef();
@@ -39,31 +40,64 @@ const Contact = () => {
           data-aos="fade-up"
           className="bg-base-200 text-start flex flex-col justify-between "
         >
-          
-            <div className=" bg-gray-200 m-2 rounded-2xl ">
-              <h3 className="text-3xl font-bold">Personal Information</h3>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Email
-                </h3>
-                <p className="text-gray-600">arifuzzamanar29@gmail.com</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  Phone
-                </h3>
-                <p className="text-gray-600">+880 1339313060</p>
-              </div>
-              <div>
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                  WhatsApp
-                </h3>
-                <p className="text-gray-600">+880 1853684161</p>
-              </div>
-            </div>
+          <div className=" bg-color m-2 rounded-2xl ">
+            <ConnectMe />
+          </div>
+        </div>
 
+        {/* Right Side: Contact Form */}
+        <div className="flex flex-col justify-between ">
+          <form
+            data-aos="fade-up"
+            ref={form}
+            onSubmit={handleSubmit}
+            className="space-y-6 delay-300  md:p-5 p-2 rounded-2xl flex-2"
+          >
             <div>
-              <div className="flex justify-center ">
+              <label className="block mb-1 font-medium ">
+                Your Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Full Name"
+                required
+                className="w-full border-b-2 border-gray-700 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
+              />
+            </div>
+            <div>
+              <label className="block mb-1 font-medium ">
+                Your Email
+              </label>
+              <input
+                type="email"
+                name="userEmail"
+                placeholder="(e.g info@gmail.com)"
+                required
+                className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
+              />
+            </div>
+            <div>
+              <label className="block mb-1 font-medium ">
+                Your Message
+              </label>
+              <textarea
+                name="message"
+                rows="4"
+                required
+                placeholder="Your Message"
+                className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="btn-block bg-color text-white px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
+            >
+              Send Message
+            </button>
+          </form>
+          <div >
+            <div className="flex justify-center ">
               <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full hidden sm:block">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
@@ -109,60 +143,8 @@ const Contact = () => {
               <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
               <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
             </div>
-            </div>
-          
+          </div>
         </div>
-
-        {/* Right Side: Contact Form */}
-        <form
-          data-aos="fade-up"
-          ref={form}
-          onSubmit={handleSubmit}
-          className="space-y-6 delay-300  md:p-5 p-2 rounded-2xl flex-2"
-        >
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">
-              Your Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Full Name"
-              required
-              className="w-full border-b-2 border-gray-700 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
-            />
-          </div>
-          <div>
-            <label className="block mb-1 font-medium text-gray-600">
-              Your Email
-            </label>
-            <input
-              type="email"
-              name="userEmail"
-              placeholder="(e.g info@gmail.com)"
-              required
-              className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
-            />
-          </div>
-          <div>
-            <label className="block mb-1 font-medium text-gray-700">
-              Your Message
-            </label>
-            <textarea
-              name="message"
-              rows="3"
-              required
-              placeholder="Your Message"
-              className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            className="btn-block bg-color text-white px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
-          >
-            Send Message
-          </button>
-        </form>
         <ToastContainer position="top-center" />
       </div>
     </div>
