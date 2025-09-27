@@ -7,7 +7,7 @@ import Button from "../../lib/utils/Button";
 const projects = [
   {
     id: 1,
-    name: "ParcelXpress ",
+    name: "Study Panel ",
     status: "running project, no live link",
     image: studyPanel,
     subTitle:
