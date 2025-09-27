@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
 import logo from "../assets/myLogo.png";
-import { Link } from "react-scroll"
+import { Link } from "react-scroll";
 import Button from "../lib/utils/Button";
 // import { ScrollLink } from "react-scroll";
 
@@ -12,6 +12,7 @@ const Navbar = () => {
         className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
         to="home"
         smooth={true}
+        spy={true}
         duration={500}
         offset={-70}
       >
@@ -19,52 +20,57 @@ const Navbar = () => {
       </Link>
 
       <Link
-        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        activeClass="active"  className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
         to="about"
+        spy={true}
         smooth={true}
-        duration={500}
         offset={-70}
+        duration={500}
       >
         About Me
       </Link>
 
       <Link
-        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        activeClass="active"  className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
         to="skill"
+        spy={true}
         smooth={true}
-        duration={500}
         offset={-70}
+        duration={500}
       >
         Skill
       </Link>
 
       <Link
-        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        activeClass="active"  className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
         to="project"
+        spy={true}
         smooth={true}
-        duration={500}
         offset={-70}
+        duration={500}
       >
         Project
       </Link>
-      <Link
-        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+     <Link
+        activeClass="active"  className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
         to="education"
+        spy={true}
         smooth={true}
-        duration={500}
         offset={-70}
+        duration={500}
       >
         Education
       </Link>
 
       <Link
-        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        activeClass="active"  className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
         to="contact"
+        spy={true}
         smooth={true}
-        duration={500}
         offset={-70}
+        duration={500}
       >
-        Contact Me
+        Contact
       </Link>
     </>
   );
