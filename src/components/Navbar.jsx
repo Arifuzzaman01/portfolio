@@ -1,31 +1,75 @@
 import React from "react";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
-import logo from "../assets/myLogo.png"
-import { NavLink } from "react-router";
+import logo from "../assets/myLogo.png";
+import { Link } from "react-scroll"
 import Button from "../lib/utils/Button";
+// import { ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   const link = (
     <>
-      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/">
+      <Link
+        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        to="home"
+        smooth={true}
+        duration={500}
+        offset={-70}
+      >
         Home
-      </NavLink>
-      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/about">
+      </Link>
+
+      <Link
+        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        to="about"
+        smooth={true}
+        duration={500}
+        offset={-70}
+      >
         About Me
-      </NavLink>
-      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/skill">
+      </Link>
+
+      <Link
+        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        to="skill"
+        smooth={true}
+        duration={500}
+        offset={-70}
+      >
         Skill
-      </NavLink>
-      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/project">
+      </Link>
+
+      <Link
+        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        to="project"
+        smooth={true}
+        duration={500}
+        offset={-70}
+      >
         Project
-      </NavLink>
-      <NavLink className=" font-bold mx-[10px] transition-all duration-100 hover:translate-0.5" to="/contact">
+      </Link>
+      <Link
+        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        to="education"
+        smooth={true}
+        duration={500}
+        offset={-70}
+      >
+        Education
+      </Link>
+
+      <Link
+        className="font-bold mx-[10px] cursor-pointer transition-all duration-200 hover:scale-105"
+        to="contact"
+        smooth={true}
+        duration={500}
+        offset={-70}
+      >
         Contact Me
-      </NavLink>
+      </Link>
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-sm border-b-2 border-[#9112BC] sticky top-0 z-50">
+    <nav className="navbar bg-base-100 shadow-sm border-b-2 border-[#9112BC] sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -82,7 +126,7 @@ const Navbar = () => {
           <Button text={"Resume"} />
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 

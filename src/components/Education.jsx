@@ -68,7 +68,7 @@ const Education = () => {
     },
   ];
   return (
-    <div className=" p-6  rounded-xl shadow-lg">
+    <div className=" py-6  rounded-xl shadow-lg">
       {/* Header Section */}
       <div className="text-center ">
         <div className="flex justify-center items-center mb-2">
@@ -85,7 +85,9 @@ const Education = () => {
       {/* Education Timeline */}
       <div className=" md:grid grid-cols-2 items-center gap-3">
         <div>
-          <h2 className="font-bold text-2xl my-4 pb-2 border-b-2">Academic</h2>
+          <h2 className="font-bold text-2xl my-4 pb-2 border-b-2 border-white">
+            Academic
+          </h2>
           <div className="space-y-8">
             {educationData.map((edu, index) => (
               <div key={index} className="relative">
@@ -217,7 +219,9 @@ const Education = () => {
           </div>
         </div>
         <div>
-          <h1 className="font-bold text-2xl my-4 border-b-2 pb-2">Courses</h1>
+          <h1 className="font-bold text-2xl my-4 border-b-2 pb-2 border-white">
+            Courses
+          </h1>
           <div className="space-y-3">
             {courses.map((course) => (
               <div
@@ -309,8 +313,6 @@ const Education = () => {
           </div>
         </div>
       </div>
-
-      
     </div>
   );
 };

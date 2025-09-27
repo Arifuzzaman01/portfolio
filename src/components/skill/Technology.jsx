@@ -59,7 +59,7 @@ export default function Technology() {
 
   return (
     <div className="relative  p-2 rounded-md">
-      <div className="md:grid grid-cols-2 md:gap-5 container">
+      <div className="md:grid grid-cols-2 md:gap-5 ">
         <div>
           <h1 className="text-center text-3xl font-bold color-primary">
             Frontend

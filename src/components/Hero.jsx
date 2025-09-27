@@ -54,7 +54,7 @@ const Hero = () => {
           href="https://drive.google.com/file/d/1mlJ_ibnzMpAZ1U9hZ-p6B7TET6vEpdh0/view?usp=sharing"
           target="blanc"
         >
-          <Button text={"Resume"} />
+          <Button text={"See the Resume"} />
         </a>
       </div>
       <div className="flex-1 flex md:justify-end items-center justify-center ">

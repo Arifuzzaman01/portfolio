@@ -13,7 +13,7 @@ const AboutMe = () => {
       playOnce={false}
     >
       
-        <div className="container mx-auto text-center p-5">
+        <div className=" mx-auto text-center p-5">
           <h2 className="text-3xl font-bold  dark:text-white mb-4">
             About Me
           </h2>

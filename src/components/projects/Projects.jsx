@@ -84,12 +84,12 @@ const Projects = () => {
 
   return (
     <section className="   rounded-xl ">
-      <div className="max-w-6xl mx-auto text-center mb-10">
+      <div className=" mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold">My Projects</h2>
       </div>
 
       {/* Project cards */}
-      <div className=" container mx-auto p-2 md:p-0">
+      <div className="  mx-auto p-2 md:p-0">
         {projects.map((project) => (
           <div
             data-aos="flip-up"
