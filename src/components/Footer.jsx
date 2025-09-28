@@ -8,17 +8,17 @@ const Footer = () => {
       <nav>
         <div className="grid grid-flow-col py-5">
           <div className="flex gap-3">
-            <a className="text-gray-300" href="https://github.com/arifuzzaman01" target="blanc">
+            <a className="text-[#9112BC]" href="https://github.com/arifuzzaman01" target="blanc">
               <FaGithub size={30} />
             </a>
-            <a className="text-gray-300"
+            <a className="text-[#9112BC]"
               href="https://www.linkedin.com/in/arifuzzaman01/"
               target="blanc"
             >
               {" "}
               <FaLinkedin size={30} />
             </a>
-            <a className="text-gray-300"
+            <a className="text-[#9112BC]"
               href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"
               target="blanc"
             >
@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p className="text-gray-300 ">
+        <p className="text-[#9112BC] ">
           Copyright © {new Date().getFullYear()} - All right reserved by Arifuzzaman Rakib
         </p>
       </aside>

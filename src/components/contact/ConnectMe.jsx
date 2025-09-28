@@ -68,7 +68,7 @@ const ConnectMe = () => {
   ];
 
   return (
-    <div className="p-3 lg:p-5  rounded-xl shadow-lg text-gray-50">
+    <div className="p-3 lg:p-5  rounded-xl shadow-lg ">
       <h2 className="text-2xl font-bold  mb-6 text-center">
         Connect With Me
       </h2>
@@ -85,8 +85,8 @@ const ConnectMe = () => {
               </div>
               
               <div className="flex-1">
-                <p className="text-sm font-medium text-gray-100">{method.label}</p>
-                <p className="text-base font-semibold text-gray-300">
+                <p className="text-sm font-medium ">{method.label}</p>
+                <p className="text-base font-semibold text-gray-400">
                   {method.value}
                 </p>
               </div>
@@ -96,11 +96,11 @@ const ConnectMe = () => {
               {method.copyable && (
                 <button
                   onClick={() => handleCopy(method.value, method.label)}
-                  className="p-2 text-gray-50 hover:text-gray-400 transition-colors duration-200"
+                  className="p-2  hover:text-gray-400 transition-colors duration-200"
                   title={`Copy ${method.label}`}
                 >
                   {copiedField === method.label ? (
-                    <Check className="w-4 h-4 text-green-300" />
+                    <Check className="w-4 h-4 " />
                   ) : (
                     <Copy className="w-4 h-4" />
                   )}
@@ -111,12 +111,12 @@ const ConnectMe = () => {
                 href={method.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`px-4 py-1 md:py-2 rounded-lg font-medium text-white transition-colors duration-200 ${
-                  method.label === 'Phone' ? 'bg-blue-600 hover:bg-blue-700' :
-                  method.label === 'Email' ? 'bg-blue-600 hover:bg-blue-700' :
-                  method.label === 'WhatsApp' ? 'bg-blue-600 hover:bg-blue-700' :
-                  method.label === 'Address' ? 'bg-blue-600 hover:bg-purple-700' :
-                  'bg-blue-600 hover:bg-blue-700'
+                className={`px-4 py-1 md:py-2 rounded-lg font-medium text-black hover:text-white  transition-colors duration-200 ${
+                  method.label === 'Phone' ? 'bg-white hover:bg-blue-700' :
+                  method.label === 'Email' ? 'bg-white hover:bg-blue-700' :
+                  method.label === 'WhatsApp' ? 'bg-white hover:bg-blue-700' :
+                  method.label === 'Address' ? 'bg-white hover:bg-purple-700' :
+                  'bg-white hover:bg-blue-700'
                 }`}
               >
                 Open

@@ -38,7 +38,7 @@ const Contact = () => {
         {/* Left Side: Contact Info */}
         <div
           data-aos="fade-up"
-          className=" bg-color m-2 mb-0 rounded-2xl text-start flex flex-col justify-between "
+          className=" border m-2 mb-0 rounded-2xl text-start flex flex-col justify-between "
         >
           <ConnectMe />
         </div>
@@ -58,7 +58,7 @@ const Contact = () => {
                 name="name"
                 placeholder="Your Full Name"
                 required
-                className="w-full border-b-2 border-gray-700 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
+                className="w-full border-b-2 border-[#9112BC] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none "
               />
             </div>
             <div>
@@ -68,7 +68,7 @@ const Contact = () => {
                 name="userEmail"
                 placeholder="(e.g info@gmail.com)"
                 required
-                className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
+                className="w-full border-b-2 border-[#9112BC] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none "
               />
             </div>
             <div>
@@ -78,7 +78,7 @@ const Contact = () => {
                 rows="4"
                 required
                 placeholder="Your Message"
-                className="w-full border-b-2 border-gray-600 px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none focus:ring focus:border-blue-400"
+                className="w-full border-b-2 border-[#9112BC] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none  "
               ></textarea>
             </div>
             <button

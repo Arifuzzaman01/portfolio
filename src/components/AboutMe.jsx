@@ -14,7 +14,7 @@ const AboutMe = () => {
     >
       
         <div className=" mx-auto text-center p-5">
-          <h2 className="text-3xl font-bold  dark:text-white mb-4">
+          <h2 className="text-3xl font-bold   mb-4">
             About Me
           </h2>
 
