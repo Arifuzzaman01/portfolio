@@ -1,10 +1,25 @@
 import React, { useState } from "react";
 import athletic from "../../assets/athletic-overview.PNG";
-import roommate from "../../assets/roommate-overview.PNG";
+import agriSmart from "../../assets/agriSmart2.PNG";
 import studyPanel from "../../assets/studyPannel.jpg";
 import Button from "../../lib/utils/Button";
 
 const projects = [
+  {
+    id: 3,
+    name: "AgriSmart",
+    image: agriSmart,
+    subTitle:
+      "AgriSmart is a smart digital platform designed for Bangladeshi farmers to access real-time weather updates, expert advice, and modern farming insights—all in one place to improve productivity and decision-making.",
+    stack: ["Next.JS", "Express", "MongoDB","Mongoose","Socket.IO", "NextAuth", "Tailwind"],
+    description:
+      "AgriSmart: A Smart Agriculture Platform for Bangladeshi Farmers. Many farmers in Bangladesh struggle with limited access to reliable information, weather forecasts, and expert advice. AgriSmart aims to solve these challenges through a single smart digital platform that provides real-time updates, expert consultations, and modern farming insights — helping farmers make better decisions, increase productivity, and ensure sustainable growth.",
+    live: "https://agri-smart-silk.vercel.app/",
+    githubClient: "#",
+    githubServer: "#",
+    challenges: "During development, we faced challenges in team management, project planning, and maintaining smooth coordination among members. Despite these hurdles, we successfully built the initial version of AgriSmart.",
+    improvements: "In the future, we plan to enhance the platform by adding AI-based crop recommendation, real-time weather notifications, and personalized farming tips to make AgriSmart smarter and more useful for farmers across Bangladesh.",
+  },
   {
     id: 1,
     name: "Study Panel ",
@@ -59,21 +74,7 @@ const projects = [
       " JWT was most challenging because I implement this first time.",
     improvements: "Payment gateway, event reminders.",
   },
-  {
-    id: 3,
-    name: "Roommate Finder",
-    image: roommate,
-    subTitle:
-      "Roommate Finder is a modern, user-friendly platform built to connect people who are searching for shared living spaces. The app allows users to sign up, create detailed listings for available rooms ",
-    stack: ["React", "Express", "MongoDB", "Firebase", "Tailwind"],
-    description:
-      "Roommate Finder is a modern, user-friendly platform built to connect people who are searching for shared living spaces. The app allows users to sign up, create detailed listings for available rooms or flats, and browse others’ listings using filters such as location, availability, and type ",
-    live: "https://roommatefinder.netlify.app",
-    githubClient: "https://github.com/Arifuzzaman01/roommate-finder",
-    githubServer: "https://github.com/Arifuzzaman01/roommate-finder-server",
-    challenges: "Location filtering, user verification, secure messaging.",
-    improvements: "Rating system, advanced filtering with AI.",
-  },
+  
 ];
 
 const Projects = () => {
@@ -92,7 +93,7 @@ const Projects = () => {
       <div className="  mx-auto p-2 md:p-0">
         {projects.map((project) => (
           <div
-            data-aos="flip-up"
+            data-aos="fade-up"
             key={project.id}
             className=" rounded-xl shadow p-3 hover:shadow-xl border-b-4 border-gray-700 transition  my-5 flex flex-col md:flex-row md:gap-5 bg-[#9112BC]"
           >
@@ -100,7 +101,7 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.name}
-                className="rounded-lg w-full h-56  object-cover mb-4 md:mb-0 hover:scale-105 transition-all duration-200 ease-in-out"
+                className="rounded-lg w-full h-full object-cover mb-4 md:mb-0 hover:scale-105 transition-all duration-200 ease-in-out"
               />
             </div>
             <div className="space-y-3  bg-base-100 p-2 rounded-[8px] flex flex-col justify-between flex-2 ">

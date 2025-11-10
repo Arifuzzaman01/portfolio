@@ -75,7 +75,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="navbar bg-base-100 shadow-sm border-b-2 border-[#9112BC] sticky top-0 z-50">
+    <nav className="navbar bg-base-100/70 shadow-sm border-b-2 border-[#9112BC] sticky top-0 z-50 backdrop-blur-md ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -125,7 +125,7 @@ const Navbar = () => {
           <IoMoonOutline size={24} className="swap-on  fill-current" />
         </label>
         <a
-          href="https://drive.google.com/file/d/1t9ct4Hi1ShS0J3_mreUbZdntWsz5InKu/view?usp=sharing"
+          href="https://drive.google.com/file/d/1BqmWrBsBjF_8-qBCDYNmaxS7v4NYkDcl/view?usp=sharing"
           target="blanc"
         >
           {" "}

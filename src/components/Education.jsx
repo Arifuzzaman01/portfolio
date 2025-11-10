@@ -226,7 +226,7 @@ const Education = () => {
             {courses.map((course) => (
               <div
                 key={course.is}
-                className="border border-[#9112BC] rounded-md p-2"
+                className="border border-[#9112BC] rounded-md p-4"
               >
                 {/* Institution Icon */}
 

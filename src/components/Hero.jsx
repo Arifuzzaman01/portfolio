@@ -51,7 +51,7 @@ const Hero = () => {
           </a>
         </div>
         <a
-          href="https://drive.google.com/file/d/1t9ct4Hi1ShS0J3_mreUbZdntWsz5InKu/view?usp=sharing"
+          href="https://drive.google.com/file/d/1BqmWrBsBjF_8-qBCDYNmaxS7v4NYkDcl/view?usp=sharing"
           target="blanc"
         >
           <Button text={"See the Resume"} />
