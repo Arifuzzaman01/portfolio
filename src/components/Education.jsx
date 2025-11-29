@@ -72,8 +72,8 @@ const Education = () => {
       {/* Header Section */}
       <div className="text-center ">
         <div className="flex justify-center items-center mb-2">
-          <div className="p-3 bg-blue-100 rounded-full">
-            <GraduationCap className="w-8 h-8 text-blue-600" />
+          <div className="p-3 bg-[var(--color-primary)]rounded-full">
+            <GraduationCap className="w-8 h-8 text-[var(--color-primary)]" />
           </div>
         </div>
         <h2 className=" text-2xl md:text-3xl lg:text-4xl font-bold  mb-2">
@@ -93,14 +93,14 @@ const Education = () => {
               <div key={index} className="relative">
                 {/* Timeline Line */}
                 {index !== educationData.length - 1 && (
-                  <div className="absolute left-6 top-16 w-0.5 h-full bg-blue-800"></div>
+                  <div className="absolute left-6 top-16 w-0.5 h-full bg-[var(--color-primary)]"></div>
                 )}
 
-                <div className="md:flex items-start space-x-4  p-6 rounded-lg border border-[#9112BC] hover:shadow-md transition-shadow duration-300">
+                <div className="md:flex items-start space-x-4  p-6 rounded-lg border  hover:shadow-md transition-shadow duration-300">
                   {/* Institution Icon */}
                   <div className="flex-shrink-0">
                     <div className="p-3 bg-color w-fit rounded-full">
-                      <Award className="w-6 h-6 text-white" />
+                      <Award className="w-6 h-6 text-gray-500" />
                     </div>
                   </div>
 
@@ -109,7 +109,7 @@ const Education = () => {
                     {/* Degree and Institution */}
                     <div className="mb-4">
                       <h3 className="text-xl font-bold  mb-1">{edu.degree}</h3>
-                      <p className="text-lg font-semibold text-blue-600">
+                      <p className="text-lg font-semibold text-[var(--color-primary)]">
                         {edu.institution}
                       </p>
                     </div>
@@ -138,7 +138,7 @@ const Education = () => {
 
                       {/* Grade Badge */}
                       <div className="flex items-center">
-                        <span className="px-3 py-1 bg-color text-white rounded-full text-sm font-medium">
+                        <span className="px-3 py-1 bg-color text-gray-500 rounded-full text-sm font-medium">
                           First Class
                         </span>
                       </div>
@@ -152,14 +152,14 @@ const Education = () => {
                       {/* Key Courses */}
                       <div>
                         <h4 className="font-semibold  mb-2 flex items-center">
-                          <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                          <span className="w-2 h-2 bg-[var(--color-primary)] rounded-full mr-2"></span>
                           Key Courses Covered
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {edu.courses.map((course, courseIndex) => (
                             <span
                               key={courseIndex}
-                              className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm"
+                              className="px-3 py-1 bg-[var(--color-primary)]-50 text-[var(--color-primary)]-700 rounded-full text-sm"
                             >
                               {course}
                             </span>
@@ -178,7 +178,7 @@ const Education = () => {
                             (achievement, achievementIndex) => (
                               <span
                                 key={achievementIndex}
-                                className="px-3 py-1 bg-green-50 text-green-700 rounded-full text-sm"
+                                className="px-3 py-1 bg-green-50 text-gray-700 rounded-full text-sm"
                               >
                                 {achievement}
                               </span>
@@ -194,13 +194,13 @@ const Education = () => {
                         <span className="text-sm font-medium ">
                           Academic Performance
                         </span>
-                        <span className="text-sm font-bold text-blue-600">
+                        <span className="text-sm font-bold text-[var(--color-primary)]">
                           {edu.cgpa}/4.00
                         </span>
                       </div>
                       <div className="w-full bg-gray-200 rounded-full h-2">
                         <div
-                          className="bg-gradient-to-r from-blue-500 to-[#9112BC] h-2 rounded-full"
+                          className="bg-gradient-to-r from-[var(--color-primary)] to-green-600 h-2 rounded-full"
                           style={{
                             width: `${(parseFloat(edu.cgpa) / 4) * 100}%`,
                           }}
@@ -226,21 +226,21 @@ const Education = () => {
             {courses.map((course) => (
               <div
                 key={course.is}
-                className="border border-[#9112BC] rounded-md p-4"
+                className="border  rounded-md p-4"
               >
                 {/* Institution Icon */}
 
                 <div className="flex gap-8">
                   <div className="flex-shrink-0">
                     <div className="p-3 bg-color w-fit rounded-full">
-                      <Award className="w-5 h-5 text-white" />
+                      <Award className="w-5 h-5 text-gray-500" />
                     </div>
                   </div>
                   <div className="mb-1">
                     <h3 className="text-xl font-bold  mb-1">
                       {course.courseTitle}
                     </h3>
-                    <p className="text-lg font-semibold text-blue-600">
+                    <p className="text-lg font-semibold text-[var(--color-primary)]">
                       {course.institution}
                     </p>
                   </div>
@@ -272,7 +272,7 @@ const Education = () => {
                     {/* Key Courses */}
                     <div className="flex-1">
                       <h4 className="font-semibold  mb-2 flex items-center">
-                        <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
+                        <span className="w-2 h-2 bg-[var(--color-primary)] rounded-full mr-2"></span>
                         Key Courses Covered
                       </h4>
                       <div className="flex flex-wrap gap-1">
@@ -290,7 +290,7 @@ const Education = () => {
                     {/* Achievements */}
                     <div>
                       <h4 className="font-semibold  mb-2 flex items-center">
-                        <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
+                        <span className="w-2 h-2 bg-[var(--color-primary)] rounded-full mr-2"></span>
                         Achievements
                       </h4>
                       <div className="flex flex-wrap gap-2">

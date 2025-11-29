@@ -20,7 +20,7 @@ const AboutMe = () => {
 
           <p className=" text-lg leading-relaxed">
             Hello! I'm{" "}
-            <span className="font-semibold color-primary ">
+            <span className="font-semibold text-[var(--color-primary)] ">
               Md Arifuzzaman Rakib
             </span>
             , a passionate front-end web developer from Bangladesh. My journey

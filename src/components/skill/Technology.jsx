@@ -61,7 +61,7 @@ export default function Technology() {
     <div className="relative  p-2 rounded-md">
       <div className="md:grid grid-cols-2 md:gap-5 ">
         <div>
-          <h1 className="text-center text-3xl font-bold color-primary">
+          <h1 className="text-center text-3xl font-bold text-[var(--color-primary)]">
             Frontend
           </h1>
           <div className="relative text-center z-10  py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover   h-full mx-auto flex flex-wrap gap-3 justify-center md:justify-start">
@@ -77,7 +77,7 @@ export default function Technology() {
                   >
                     {IconComponent && (
                       <motion.div variants={iconVariants}>
-                        <IconComponent className="text-3xl color-primary" />
+                        <IconComponent className="text-3xl text-[var(--color-primary)]" />
                       </motion.div>
                     )}
                     <h4>{skill.title}</h4>
@@ -87,7 +87,7 @@ export default function Technology() {
           </div>
         </div>
         <div>
-          <h1 className="text-center text-3xl font-bold color-primary">
+          <h1 className="text-center text-3xl font-bold text-[var(--color-primary)]">
             Backend
           </h1>
           <div className="relative text-center z-10  py-12 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover mx-auto flex flex-wrap gap-4 justify-center md:justify-start">
@@ -103,7 +103,7 @@ export default function Technology() {
                   >
                     {IconComponent && (
                       <motion.div variants={iconVariants}>
-                        <IconComponent className="text-3xl color-primary" />
+                        <IconComponent className="text-3xl text-[var(--color-primary)]" />
                       </motion.div>
                     )}
                     <h4>{skill.title}</h4>

@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="flex flex-col flex-1 justify-center items-center md:items-start space-y-5 p-2">
         <div>
           <h2 className="text-xl font-bold ml-7 ">Hi There, I am</h2>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold color-primary">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-primary)]">
             <Typewriter
               words={["Arifuzzaman Rakib"]}
               loop={true}
@@ -34,20 +34,20 @@ const Hero = () => {
         </p>
         <div className="flex gap-3 ]">
           <a href="https://github.com/arifuzzaman01" target="blanc">
-            <FaGithub size={35} className="bg-[#9112BC] rounded-full" />
+            <FaGithub size={35} className=" rounded-full " fill="var(--color-primary)" />
           </a>
           <a href="https://www.linkedin.com/in/arifuzzaman02/" target="blanc">
             {" "}
-            <BsLinkedin  size={35} color="#9112BC" className=" rounded-full" />
+            <BsLinkedin  size={35} className=" rounded-full " fill="var(--color-primary)"  />
           </a>
           <a
             href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"
             target="blanc"
           >
-            <FaFacebook size={35} className="bg-[#9112BC] rounded-full" />
+            <FaFacebook size={35} className=" rounded-full " fill="var(--color-primary)"  />
           </a>
           <a href="https://x.com/Arifuzzaman02" target="blanc">
-            <FaXTwitter size={35} className="text-[#9112BC] rounded-full" />
+            <FaXTwitter size={35} className=" rounded-full " fill="var(--color-primary)"  />
           </a>
         </div>
         <a
@@ -58,7 +58,7 @@ const Hero = () => {
         </a>
       </div>
       <div className="flex-1 flex md:justify-end items-center justify-center ">
-        <div className="bg-[#9112BC] border-8 border-white rounded-full flex w-88 h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden opacity-80">
+        <div className="bg-color border-8 border-white rounded-full flex w-88 h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden opacity-80">
           <GlareHover
             glareColor="#ffffff"
             glareOpacity={0.3}

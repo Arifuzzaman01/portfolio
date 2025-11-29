@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
-import logo from "../assets/myLogo.png";
+import logo from "../assets/nameLogo.png";
 import { Link } from "react-scroll";
 import Button from "../lib/utils/Button";
 // import { ScrollLink } from "react-scroll";
@@ -75,7 +75,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="navbar bg-base-100/70 shadow-sm border-b-2 border-[#9112BC] sticky top-0 z-50 backdrop-blur-md ">
+    <nav className="navbar bg-base-100/70 shadow-sm border-b-2 border-green-200/90  sticky top-0 z-50 backdrop-blur-md ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -103,11 +103,11 @@ const Navbar = () => {
           </ul>
         </div>
         <a className="w-20 h-10">
-          <img src={logo} alt="logo" className="w-20 h-auto" />
+          <img src={logo} alt="logo" className="w-18 h-auto" />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{link}</ul>
+        <ul className="menu menu-horizontal px-1">{link} </ul>
       </div>
       <div className="navbar-end">
         <label className="swap swap-rotate mr-3">

@@ -58,7 +58,7 @@ const Contact = () => {
                 name="name"
                 placeholder="Your Full Name"
                 required
-                className="w-full border-b-2 border-[#9112BC] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none "
+                className="w-full border-b-2 border-[var(--color-primary)] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none "
               />
             </div>
             <div>
@@ -68,7 +68,7 @@ const Contact = () => {
                 name="userEmail"
                 placeholder="(e.g info@gmail.com)"
                 required
-                className="w-full border-b-2 border-[#9112BC] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none "
+                className="w-full border-b-2 border-[var(--color-primary)] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none "
               />
             </div>
             <div>
@@ -78,19 +78,19 @@ const Contact = () => {
                 rows="4"
                 required
                 placeholder="Your Message"
-                className="w-full border-b-2 border-[#9112BC] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none  "
+                className="w-full border-b-2 border-[var(--color-primary)] px-4 py-2 transition-all duration-300 hover:translate-1 rounded focus:outline-none  "
               ></textarea>
             </div>
             <button
               type="submit"
-              className="btn-block bg-color text-white px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
+              className="btn-block bg-color text-gray-900 font-semibold px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
             >
               Send Message
             </button>
           </form>
           <div>
             <div className="flex justify-center ">
-              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full hidden sm:block">
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[var(--color-primary)] rounded-t-full hidden sm:block">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
                     <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
@@ -98,7 +98,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full ">
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[var(--color-primary)] rounded-t-full ">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
                     <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
@@ -108,18 +108,18 @@ const Contact = () => {
               <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted e rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted rounded-t-full">
-                    <div className="h-8 w-8 mx-auto mt-2 border-t-2 border-dotted bg-[#9112BC]  rounded-full"></div>
+                    <div className="h-8 w-8 mx-auto mt-2 border-t-2 border-dotted bg-[var(--color-primary)]  rounded-full"></div>
                   </div>
                 </div>
               </div>
-              <div className="h-10 w-20 border-t-2 border-dotted **:border-[#9112BC] rounded-t-full">
+              <div className="h-10 w-20 border-t-2 border-dotted **:border-[var(--color-primary)] rounded-t-full">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted  rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted  rounded-t-full">
                     <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
                   </div>
                 </div>
               </div>
-              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full **:border-[#9112BC] hidden sm:flex">
+              <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full **:border-[var(--color-primary)] hidden sm:flex">
                 <div className="h-8 mt-2 w-16 mx-auto border-t-2 border-dotted rounded-t-full">
                   <div className="h-6 w-12 mt-2 mx-auto border-t-2 border-dotted rounded-t-full">
                     <div className="h-4 w-8 mx-auto mt-2 border-t-2 border-dotted  rounded-t-full"></div>
@@ -127,7 +127,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center *:nth-[5]:border-[#9112BC] *:nth-[2]:border-[#9112BC]">
+            <div className="flex justify-center *:nth-[5]:border-[var(--color-primary)] *:nth-[2]:border-[var(--color-primary)]">
               <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
               <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>
               <div className="h-10 w-20 border-t-2 border-dotted  rounded-t-full"></div>

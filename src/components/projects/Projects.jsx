@@ -11,14 +11,24 @@ const projects = [
     image: agriSmart,
     subTitle:
       "AgriSmart is a smart digital platform designed for Bangladeshi farmers to access real-time weather updates, expert advice, and modern farming insights—all in one place to improve productivity and decision-making.",
-    stack: ["Next.JS", "Express", "MongoDB","Mongoose","Socket.IO", "NextAuth", "Tailwind"],
+    stack: [
+      "Next.JS",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Socket.IO",
+      "NextAuth",
+      "Tailwind",
+    ],
     description:
       "AgriSmart: A Smart Agriculture Platform for Bangladeshi Farmers. Many farmers in Bangladesh struggle with limited access to reliable information, weather forecasts, and expert advice. AgriSmart aims to solve these challenges through a single smart digital platform that provides real-time updates, expert consultations, and modern farming insights — helping farmers make better decisions, increase productivity, and ensure sustainable growth.",
     live: "https://agri-smart-silk.vercel.app/",
     githubClient: "#",
     githubServer: "#",
-    challenges: "During development, we faced challenges in team management, project planning, and maintaining smooth coordination among members. Despite these hurdles, we successfully built the initial version of AgriSmart.",
-    improvements: "In the future, we plan to enhance the platform by adding AI-based crop recommendation, real-time weather notifications, and personalized farming tips to make AgriSmart smarter and more useful for farmers across Bangladesh.",
+    challenges:
+      "During development, we faced challenges in team management, project planning, and maintaining smooth coordination among members. Despite these hurdles, we successfully built the initial version of AgriSmart.",
+    improvements:
+      "In the future, we plan to enhance the platform by adding AI-based crop recommendation, real-time weather notifications, and personalized farming tips to make AgriSmart smarter and more useful for farmers across Bangladesh.",
   },
   {
     id: 1,
@@ -74,7 +84,6 @@ const projects = [
       " JWT was most challenging because I implement this first time.",
     improvements: "Payment gateway, event reminders.",
   },
-  
 ];
 
 const Projects = () => {
@@ -95,7 +104,7 @@ const Projects = () => {
           <div
             data-aos="fade-up"
             key={project.id}
-            className=" rounded-xl shadow p-3 hover:shadow-xl border-b-4 border-gray-700 transition  my-5 flex flex-col md:flex-row md:gap-5 bg-[#9112BC]"
+            className=" rounded-xl shadow p-3 hover:shadow-xl border-b-4 border-gray-700 transition  my-5 flex flex-col md:flex-row md:gap-5 bg-[var(--color-primary)]"
           >
             <div className="md:w-2/5 ">
               <img
@@ -110,7 +119,7 @@ const Projects = () => {
               <p className="  mb-4 flex flex-wrap gap-2">
                 <span className="font-bold ">Stack: </span>{" "}
                 {project.stack.map((s) => (
-                  <div className="border border-[#9112BC] rounded-[3px] px-1">
+                  <div className="border border-text-[var(--color-primary)] rounded-[3px] px-1">
                     {s}
                   </div>
                 ))}
@@ -124,8 +133,8 @@ const Projects = () => {
 
       {/* Modal */}
       {selectedProject && (
-        <div className="fixed inset-0 bg-black text-start  text-gray-200 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="border-4 border-gray-500 max-w-3xl w-full rounded-lg p-6 relative overflow-y-auto max-h-[90vh]">
+        <div className="fixed inset-0 bg-black/85 text-start  text-gray-200 bg-opacity-50 flex items-center justify-center z-50 py-10">
+          <div className="border-4 border-gray-500 max-w-3xl w-full rounded-lg p-6 relative overflow-y-auto max-h-[90vh] bg-gray-950 mt-20 ">
             <img
               src={selectedProject.image}
               alt={selectedProject.name}
@@ -146,34 +155,34 @@ const Projects = () => {
             <p className="mb-4">
               <strong>Future Plans:</strong> {selectedProject.improvements}
             </p>
-            <div className="flex justify-between">
-              <div className="flex gap-4">
+         
+              <div className="flex flex-col sm:flex-row gap-4 justify-between">
                 <a
                   href={selectedProject.live}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-color text-white py-2 px-4 rounded hover:bg-green-700 transition"
+                  className="bg-color text-gray-900 text-center font-semibold py-2 px-4 rounded hover:bg-green-700 transition"
                 >
                   Live Site
                 </a>
-                <a
-                  href={selectedProject.githubClient}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-900 transition"
-                >
-                  GitHub Repo Client
-                </a>
-                <a
-                  href={selectedProject.githubServer}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-900 transition"
-                >
-                  GitHub Repo Server
-                </a>
-              </div>
-
+                <div className="flex flex-row items-center justify-center gap-2">
+                  <a
+                    href={selectedProject.githubClient}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-900 transition"
+                  >
+                    GitHub Repo Client
+                  </a>
+                  <a
+                    href={selectedProject.githubServer}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-900 transition"
+                  >
+                    GitHub Repo Server
+                  </a>
+                </div>
               <button
                 onClick={closeModal}
                 className="ml-2 text-xl text-white bg-rose-500 btn"
@@ -181,7 +190,9 @@ const Projects = () => {
               >
                 close
               </button>
-            </div>
+              </div>
+
+           
           </div>
         </div>
       )}

@@ -7,12 +7,12 @@
 }
 /* @plugin "daisyui/theme" {
 
-  --color-primary: #98CD00 ;
+  --text-[var(--color-primary)]: #98CD00 ;
   
 } */
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 /* CSS custom property for animation */
 @property --border-angle {
@@ -50,14 +50,15 @@
   animation: border 4s linear infinite;
 }
 
-.color-primary{
-  color: #9112BC;
-}
+
 .bg-color{
-  background-color: #9112BC;
+  background-color: #00F0A0;
 }
 .active {
-  color: #9112BC;  /* highlight color */
-  border-bottom: 2px solid #9112BC; 
+  color: #00F0A0;  /* highlight color */
+  border-bottom: 2px solid #00F0A0; 
 }
 /* #00f0a0, #03f0a2 */
+:root {
+  --color-primary: #00F0A0;
+}

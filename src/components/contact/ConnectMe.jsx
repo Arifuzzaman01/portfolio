@@ -24,8 +24,8 @@ const ConnectMe = () => {
       label: "Phone",
       value: contactInfo.phone,
       href: `tel:${contactInfo.phone}`,
-      color: "text-blue-600",
-      bgColor: "bg-blue-100",
+      color: "text-[var(--color-primary)]",
+      bgColor: "bg-[var(--color-primary)]-100",
       copyable: true,
     },
     {
@@ -103,14 +103,14 @@ const ConnectMe = () => {
                 rel="noopener noreferrer"
                 className={`px-4 py-1 md:py-2 rounded-lg font-medium text-black hover:text-white  transition-colors duration-200 ${
                   method.label === "Phone"
-                    ? "bg-white hover:bg-purple-500"
+                    ? "bg-white hover:bg-[var(--color-primary)]"
                     : method.label === "Email"
-                    ? "bg-white hover:bg-purple-600"
+                    ? "bg-white hover:bg-[var(--color-primary)]"
                     : method.label === "WhatsApp"
-                    ? "bg-white hover:bg-purple-700"
+                    ? "bg-white hover:bg-[var(--color-primary)]"
                     : method.label === "Address"
-                    ? "bg-white hover:bg-purple-800"
-                    : "bg-white hover:bg-blue-700"
+                    ? "bg-white hover:bg-[var(--color-primary)]"
+                    : "bg-white hover:bg-[var(--color-primary)]"
                 }`}
               >
                 Open
@@ -133,7 +133,7 @@ const ConnectMe = () => {
 
       {/* Copy Success Message */}
       {copiedField && (
-        <div className="fixed bottom-4 right-4 bg-green-600 text-white px-4 py-2 rounded-lg shadow-lg animate-bounce">
+        <div className="fixed bottom-4 right-4 bg-[var(--color-primary)] text-white px-4 py-2 rounded-lg shadow-lg animate-bounce">
           {copiedField} copied to clipboard!
         </div>
       )}

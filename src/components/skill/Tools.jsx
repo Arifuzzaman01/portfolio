@@ -24,25 +24,25 @@ export default function Tools() {
       <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
         <div className="flex flex-row items-center justify-between ">
           <Circle ref={div1Ref}>
-            <VscVscode size={32} className=" color-primary" />
+            <VscVscode size={32} className=" text-[var(--color-primary)]" />
           </Circle>
           <Circle ref={div4Ref} className="h-20 w-20 p-3 ">
-            <p className="font-bold color-primary">Tools</p>
+            <p className="font-bold text-[var(--color-primary)]">Tools</p>
           </Circle>
           <Circle ref={div5Ref} className="p-2">
-            <IoLogoVercel size={32} className=" color-primary font-bold" />
+            <IoLogoVercel size={32} className=" text-[var(--color-primary)] font-bold" />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
           <Circle ref={div2Ref} className="p-2">
-            <FaFigma size={32} className=" color-primary font-bold" />
+            <FaFigma size={32} className=" text-[var(--color-primary)] font-bold" />
           </Circle>
 
           <Circle ref={div6Ref} className="p-2">
-            <SiNetlify size={32} className=" color-primary font-bold" />
+            <SiNetlify size={32} className=" text-[var(--color-primary)] font-bold" />
           </Circle>
            <Circle ref={div3Ref} className="p-2">
-            <img className="w-10 h-8" src={pisxo} alt="color-primary" />
+            <img className="w-10 h-8" src={pisxo} alt="text-[var(--color-primary)]" />
           </Circle>
           <Circle ref={div7Ref} className="p-2">
             <img className="w-10 h-8" src={surge} alt="" />
