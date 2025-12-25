@@ -1,8 +1,9 @@
 import React from "react";
 import GlareHover from "./glareHover";
+import myImage from "../assets/me_2.png"
 
 const AboutMe = () => {
-    
+
   return (
     <GlareHover
       glareColor="#ffffff"
@@ -12,9 +13,21 @@ const AboutMe = () => {
       transitionDuration={800}
       playOnce={false}
     >
-      
-        <div className=" mx-auto text-center p-5">
-          <h2 className="text-3xl font-bold   mb-4">
+      <div className="grid md:grid-cols-3 items-center gap-5 my-8">
+        <div className=" hidden md:block col-span-1 animate-border gradient-border">
+          <div className=" z-0 overflow-hidden relative">
+            <img src={myImage} alt="My Image" className="w-full h-full object-cover z-0 mb-12" />
+            <div style={{
+              background: "linear-gradient(45deg, #031510, #04225c 50%, #142f6b) padding-box ",
+              borderRadius: "0 100px 0px 20px"
+            }} className="absolute bottom-0 h-16 md:w-[90%]  -mt-2 w-[86%] border-r-8 border-gray-200 flex justify-center items-center z-50 overflow-auto">
+              <h2 className="text-center text-xl font-semibold">Building the fast, modern web</h2>
+            </div>
+          </div>
+
+        </div>
+        <div className="mx-auto text-center md:text-start p-5 col-span-2">
+          <h2 className="text-3xl text-center  font-bold   mb-4">
             About Me
           </h2>
 
@@ -50,7 +63,8 @@ const AboutMe = () => {
             amazing together!
           </p>
         </div>
-      
+      </div>
+
     </GlareHover>
   );
 };

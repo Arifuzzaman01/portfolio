@@ -38,7 +38,7 @@ export default function index() {
     });
   }, []);
   return (
-    <div className="relative  rounded-md">
+    <div className="relative  rounded-md ">
       <div
         onMouseMove={handleMouseMove}
         onMouseEnter={() => setIsHovered(true)}
@@ -64,15 +64,15 @@ export default function index() {
         )}
 
         <div
-          className="absolute inset-0 z-0  bg-fixed rounded-lg"
+          className="absolute inset-0 z-0  bg-fixed rounded-lg "
           style={{
             background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, #ffffff6e 0%,transparent 20%,transparent) fixed`,
           }}
         ></div>
 
-        <div className="relative text-center z-10 md:px-8 pt-6 rounded-lg w-fit  bg-[url('/timeline-grid.png')] bg-cover  h-full mx-auto">
+        <div className="relative text-center z-10 md:px-8 pt-6 rounded-lg w-fit   bg-cover  h-full mx-auto">
           
-          <main>
+          <main className="">
             <section id="home">
               <Hero />
             </section>

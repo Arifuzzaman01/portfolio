@@ -104,7 +104,7 @@ const Projects = () => {
           <div
             data-aos="fade-up"
             key={project.id}
-            className=" rounded-xl shadow p-3 hover:shadow-xl border-b-4 border-gray-700 transition  my-5 flex flex-col md:flex-row md:gap-5 bg-[var(--color-primary)]"
+            className=" rounded-xl shadow p-2 hover:shadow-xl gradient-border-btn animate-border border-gray-700 transition  my-5 flex flex-col md:flex-row md:gap-2.5 bg-[var(--color-primary)]"
           >
             <div className="md:w-2/5 ">
               <img

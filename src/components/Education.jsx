@@ -12,7 +12,7 @@ const Education = () => {
       description:
         "Completed Diploma in Computer Science with strong foundation in programming, software development, and computer fundamentals.",
       courses: ["OOP Programming", "Web Development"],
-      achievements: ["Academic Excellence", "Project Work", "Technical Skills"],
+      achievements: ["Certificate","Academic Excellence", "Project Work", "Technical Skills"],
     },
   ];
   const courses = [
@@ -71,9 +71,9 @@ const Education = () => {
     <div className=" py-6  rounded-xl shadow-lg">
       {/* Header Section */}
       <div className="text-center ">
-        <div className="flex justify-center items-center mb-2">
+        <div className="flex justify-center items-center ">
           <div className="p-3 bg-[var(--color-primary)]rounded-full">
-            <GraduationCap className="w-8 h-8 text-[var(--color-primary)]" />
+            <GraduationCap className="w-12 h-12 text-[var(--color-primary)]" />
           </div>
         </div>
         <h2 className=" text-2xl md:text-3xl lg:text-4xl font-bold  mb-2">
@@ -85,22 +85,25 @@ const Education = () => {
       {/* Education Timeline */}
       <div className=" md:grid grid-cols-2 items-center gap-3">
         <div>
-          <h2 className="font-bold text-2xl my-4 pb-2 border-b-2 border-white">
-            Academic
-          </h2>
+          <div>
+            <h2 className="font-bold text-2xl my-4  ">
+              Academic
+            </h2>
+            <div className="w-4/6  mx-auto animate-border gradient-border-b mb-5"></div>
+          </div>
           <div className="space-y-8">
             {educationData.map((edu, index) => (
-              <div key={index} className="relative">
+              <div key={index} className="">
                 {/* Timeline Line */}
                 {index !== educationData.length - 1 && (
                   <div className="absolute left-6 top-16 w-0.5 h-full bg-[var(--color-primary)]"></div>
                 )}
 
-                <div className="md:flex items-start space-x-4  p-6 rounded-lg border  hover:shadow-md transition-shadow duration-300">
+                <div className="md:flex items-start space-x-4  p-6 rounded-lg p-5 animate-border gradient-border   hover:shadow-md transition-shadow duration-300">
                   {/* Institution Icon */}
                   <div className="flex-shrink-0">
                     <div className="p-3 bg-color w-fit rounded-full">
-                      <Award className="w-6 h-6 text-gray-500" />
+                      <Award className="w-6 h-6 text-gray-100" />
                     </div>
                   </div>
 
@@ -138,7 +141,7 @@ const Education = () => {
 
                       {/* Grade Badge */}
                       <div className="flex items-center">
-                        <span className="px-3 py-1 bg-color text-gray-500 rounded-full text-sm font-medium">
+                        <span className="px-3 py-1 bg-color text-gray-100 rounded-full text-sm font-medium">
                           First Class
                         </span>
                       </div>
@@ -178,7 +181,7 @@ const Education = () => {
                             (achievement, achievementIndex) => (
                               <span
                                 key={achievementIndex}
-                                className="px-3 py-1 bg-green-50 text-gray-700 rounded-full text-sm"
+                                className="px-3 py-1 bg-blue-600 text-gray-100 rounded-full text-sm"
                               >
                                 {achievement}
                               </span>
@@ -198,15 +201,15 @@ const Education = () => {
                           {edu.cgpa}/4.00
                         </span>
                       </div>
-                      <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div className="w-full bg-gray-100 rounded-full h-2">
                         <div
-                          className="bg-gradient-to-r from-[var(--color-primary)] to-green-600 h-2 rounded-full"
+                          className="bg-gradient-to-r from-blue-700 to-blue-500 h-2 rounded-full"
                           style={{
                             width: `${(parseFloat(edu.cgpa) / 4) * 100}%`,
                           }}
                         ></div>
                       </div>
-                      <div className="flex justify-between text-xs text-gray-500 mt-1">
+                      <div className="flex justify-between text-xs text-gray-100 mt-1">
                         <span>0.00</span>
                         <span>2.00</span>
                         <span>4.00</span>
@@ -219,21 +222,21 @@ const Education = () => {
           </div>
         </div>
         <div>
-          <h1 className="font-bold text-2xl my-4 border-b-2 pb-2 border-white">
+          <h1 className="font-bold text-2xl my-4 ">
             Courses
           </h1>
           <div className="space-y-3">
             {courses.map((course) => (
               <div
                 key={course.is}
-                className="border  rounded-md p-4"
+                className="p-8 animate-border gradient-border  rounded-md "
               >
                 {/* Institution Icon */}
 
                 <div className="flex gap-8">
                   <div className="flex-shrink-0">
                     <div className="p-3 bg-color w-fit rounded-full">
-                      <Award className="w-5 h-5 text-gray-500" />
+                      <Award className="w-5 h-5 text-gray-100" />
                     </div>
                   </div>
                   <div className="mb-1">

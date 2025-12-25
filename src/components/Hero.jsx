@@ -25,10 +25,10 @@ const Hero = () => {
             />
           </h1>
         </div>
-        <h3 className="font-bold text-2xl">MERN Stack Developer</h3>
+        <h3 className="font-bold text-2xl">Web  Developer</h3>
 
         <p className="font-semibold text-justify">
-         I am from Bangladesh , I can make and design the real-of-way
+          I am from Bangladesh , I can make and design the real-of-way
           website. Each website is the user friendly which can easily use to
           user.{" "}
         </p>
@@ -38,16 +38,16 @@ const Hero = () => {
           </a>
           <a href="https://www.linkedin.com/in/arifuzzaman02/" target="blanc">
             {" "}
-            <BsLinkedin  size={35} className=" rounded-full " fill="var(--color-primary)"  />
+            <BsLinkedin size={35} className=" rounded-full " fill="var(--color-primary)" />
           </a>
           <a
             href="https://web.facebook.com/arifuzzaman.arif.98096721/?_rdc=2&_rdr#"
             target="blanc"
           >
-            <FaFacebook size={35} className=" rounded-full " fill="var(--color-primary)"  />
+            <FaFacebook size={35} className=" rounded-full " fill="var(--color-primary)" />
           </a>
           <a href="https://x.com/Arifuzzaman02" target="blanc">
-            <FaXTwitter size={35} className=" rounded-full " fill="var(--color-primary)"  />
+            <FaXTwitter size={35} className=" rounded-full " fill="var(--color-primary)" />
           </a>
         </div>
         <a
@@ -57,22 +57,17 @@ const Hero = () => {
           <Button text={"See the Resume"} />
         </a>
       </div>
-      <div className="flex-1 flex md:justify-end items-center justify-center ">
-        <div className="bg-color border-8 border-white rounded-full flex w-88 h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden opacity-80">
-          <GlareHover
-            glareColor="#ffffff"
-            glareOpacity={0.3}
-            glareAngle={-30}
-            glareSize={300}
-            transitionDuration={800}
-            playOnce={false}
-          >
-            <img
-              className="w-full h-full md:h-auto object-cover border-b-4 border-white  rounded-full"
-              src={myImg}
-              alt="Profile"
-            />
-          </GlareHover>
+      <div className="flex-1 flex md:justify-end items-center justify-center  ">
+        <div className=" gradient-border -rotate-6 w-72 h-72 sm:w-88 sm:h-88  md:w-96 md:h-96">
+          <div className=" card rotate-6 border-8 animate-border gradient-border rounded-full flex w-72 h-72 sm:w-88 sm:h-88  md:w-96 md:h-96 justify-center items-center overflow-hidden opacity-80">
+            <div>
+              <img
+                className="w-full h-full md:h-auto object-cover border-b-4 border-[var(--color-primary)]  rounded-full"
+                src={myImg}
+                alt="Profile"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

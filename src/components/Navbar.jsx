@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMoonOutline, IoSunny } from "react-icons/io5";
-import logo from "../assets/nameLogo.png";
+import logo from "../assets/myLogo.png";
 import { Link } from "react-scroll";
 import Button from "../lib/utils/Button";
 // import { ScrollLink } from "react-scroll";
@@ -75,7 +75,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <nav className="navbar bg-base-100/70 shadow-sm border-b-2 border-green-200/90  sticky top-0 z-50 backdrop-blur-md ">
+    <nav className="navbar bg-base-100/70 shadow-sm border-b border-green-200/50  sticky top-0 z-50 backdrop-blur-md ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -110,20 +110,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{link} </ul>
       </div>
       <div className="navbar-end">
-        <label className="swap swap-rotate mr-3">
-          {/* this hidden checkbox controls the state */}
-          <input
-            type="checkbox"
-            className="theme-controller"
-            value="lemonade"
-          />
-
-          {/* sun icon */}
-          <IoSunny size={24} className="swap-off fill-current" />
-
-          {/* moon icon */}
-          <IoMoonOutline size={24} className="swap-on  fill-current" />
-        </label>
+        
         <a
           href="https://drive.google.com/file/d/1BqmWrBsBjF_8-qBCDYNmaxS7v4NYkDcl/view?usp=sharing"
           target="blanc"

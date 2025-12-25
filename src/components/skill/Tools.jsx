@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
 import { AnimatedBeam, Circle } from "../animated-beam/Beam";
-import { FaFigma, FaReact } from "react-icons/fa";
+import { FaFigma, FaReact, FaRobot } from "react-icons/fa";
 import { IoLogoVercel } from "react-icons/io5";
-import { SiNetlify } from "react-icons/si";
+import { SiNetlify, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import surge from "../../assets/surge-logo.svg";
-import pisxo from "../../assets/pisxologo.png";
+
+
+import { MdMan4 } from "react-icons/md";
 
 export default function Tools() {
   const containerRef = useRef(null);
@@ -24,28 +25,28 @@ export default function Tools() {
       <div className="flex h-full w-full flex-col items-stretch justify-between gap-10">
         <div className="flex flex-row items-center justify-between ">
           <Circle ref={div1Ref}>
-            <VscVscode size={32} className=" text-[var(--color-primary)]" />
+            <VscVscode size={40} className=" text-[var(--color-primary)] animate-border gradient-border" />
           </Circle>
-          <Circle ref={div4Ref} className="h-20 w-20 p-3 ">
-            <p className="font-bold text-[var(--color-primary)]">Tools</p>
+          <Circle ref={div4Ref} className="animate-border gradient-border h-20 w-20 p-3 ">
+            <p className=" text-xl font-bold text-[var(--color-primary)]">Tools</p>
           </Circle>
-          <Circle ref={div5Ref} className="p-2">
-            <IoLogoVercel size={32} className=" text-[var(--color-primary)] font-bold" />
+          <Circle ref={div5Ref} className="p-1">
+            <IoLogoVercel size={40} className=" animate-border gradient-border text-[var(--color-primary)] font-bold" />
           </Circle>
         </div>
         <div className="flex flex-row items-center justify-between">
-          <Circle ref={div2Ref} className="p-2">
-            <FaFigma size={32} className=" text-[var(--color-primary)] font-bold" />
+          <Circle ref={div2Ref} className="p-1">
+            <FaFigma size={40} className=" text-[var(--color-primary)] font-bold animate-border gradient-border" />
           </Circle>
 
-          <Circle ref={div6Ref} className="p-2">
-            <SiNetlify size={32} className=" text-[var(--color-primary)] font-bold" />
+          <Circle ref={div6Ref} className="p-1">
+            <SiNetlify size={40} className=" text-[var(--color-primary)] font-bold animate-border gradient-border" />
           </Circle>
-           <Circle ref={div3Ref} className="p-2">
-            <img className="w-10 h-8" src={pisxo} alt="text-[var(--color-primary)]" />
+           <Circle ref={div3Ref} className="p-1">
+            <SiPostman size={40} className=" w-full h-full text-[var(--color-primary)] font-bold animate-border gradient-border" />
           </Circle>
-          <Circle ref={div7Ref} className="p-2">
-            <img className="w-10 h-8" src={surge} alt="" />
+          <Circle ref={div7Ref} className="p-1">
+            <FaRobot size={40} className=" text-[var(--color-primary)] font-bold animate-border gradient-border" />
           </Circle>
         </div>
         

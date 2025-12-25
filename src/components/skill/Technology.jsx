@@ -1,4 +1,4 @@
-import { cn } from "../../lib/utils";
+import { motion } from "framer-motion";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiDaisyui,
+
   SiNextdotjs,
   SiFirebase,
   SiAxios,
@@ -17,17 +17,20 @@ import {
   SiMongodb,
   SiNodemon,
   SiJsonwebtokens,
+  SiRedux,
+  SiTypescript,
+  SiMongoose,
 } from "react-icons/si";
-import { motion } from "framer-motion";
 
-import React, { useEffect, useRef, useState } from "react";
+
+import React, { useEffect, useState } from "react";
 import Tools from "./Tools";
 import { TbBrandJavascript, TbBrandOauth } from "react-icons/tb";
 export default function Technology() {
   const [skills, setSkills] = useState([]);
 
   useEffect(() => {
-    fetch("/skill.json") // public ফোল্ডারে রাখো
+    fetch("/skill.json")
       .then((res) => res.json())
       .then((data) => setSkills(data));
   }, []);
@@ -38,7 +41,7 @@ export default function Technology() {
     FaReact: FaReact,
     FaNodeJs: FaNodeJs,
     SiTailwindcss: SiTailwindcss,
-    SiDaisyui: SiDaisyui,
+    SiTypescript: SiTypescript,
     SiNextdotjs: SiNextdotjs,
     SiFirebase: SiFirebase,
     SiAxios: SiAxios,
@@ -49,6 +52,8 @@ export default function Technology() {
     SiJsonwebtokens: SiJsonwebtokens,
     TbBrandOauth: TbBrandOauth,
     TbBrandJavascript: TbBrandJavascript,
+    SiRedux: SiRedux,
+    SiMongoose: SiMongoose,
   };
   const iconVariants = {
     hover: {
@@ -72,7 +77,7 @@ export default function Technology() {
                 return (
                   <motion.div
                     key={skill.id}
-                    className="border-1 rounded-[8px] p-5 flex items-center gap-3 hover:scale-105 transition-all duration-200 h-fit"
+                    className="animate-border gradient-border border-1 rounded-[8px] p-2 flex items-center gap-2 hover:scale-105 transition-all duration-200 h-fit"
                     whileHover="hover"
                   >
                     {IconComponent && (
@@ -98,7 +103,7 @@ export default function Technology() {
                 return (
                   <motion.div
                     key={skill.id}
-                    className="border-1 rounded-[8px] p-5 flex items-center gap-3 hover:scale-105 transition-all duration-200 h-fit"
+                    className="animate-border gradient-border border-1 rounded-[8px] p-2 flex items-center gap-3 hover:scale-105 transition-all duration-200 h-fit"
                     whileHover="hover"
                   >
                     {IconComponent && (

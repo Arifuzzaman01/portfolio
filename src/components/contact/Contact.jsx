@@ -38,7 +38,7 @@ const Contact = () => {
         {/* Left Side: Contact Info */}
         <div
           data-aos="fade-up"
-          className=" border m-2 mb-0 rounded-2xl text-start flex flex-col justify-between "
+          className=" animate-border gradient-border m-2 mb-0 rounded-2xl text-start flex flex-col justify-between "
         >
           <ConnectMe />
         </div>
@@ -83,7 +83,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="btn-block bg-color text-gray-900 font-semibold px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
+              className="btn-block gradient-border-btn animate-border text-gray-100 font-semibold px-6 py-[10px] rounded  transition-all duration-300 hover:translate-1"
             >
               Send Message
             </button>

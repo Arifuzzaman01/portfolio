@@ -20,15 +20,16 @@
       "title": "Bootstrap",
       "icon": "FaBootstrap"
     },
-    {
-      "id": 5,
-      "title": "DaisyUI",
-      "icon": "SiDaisyui"
-    },
+   
     {
       "id": 5,
       "title": "JavaScript",
       "icon": "TbBrandJavascript"
+    },
+    {
+      "id": 5,
+      "title": "TypeScript",
+      "icon": "SiTypescript"
     },
     {
       "id": 6,
@@ -59,6 +60,11 @@
       "id": 11,
       "title": "Stripe",
       "icon": "SiStripe"
+    },
+    {
+      "id": 12,
+      "title": "Redux",
+      "icon": "SiRedux"
     }
   ],
   "backend": [
@@ -79,10 +85,15 @@
     },
     {
       "id": 4,
+      "title": "Mongoose",
+      "icon": "SiMongoose"
+    },
+    {
+      "id": 4,
       "title": "Nodemon",
       "icon": "SiNodemon"
     },
-    {
+    { 
       "id": 5,
       "title": "JWT",
       "icon": "SiJsonwebtokens"

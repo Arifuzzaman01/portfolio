@@ -1,18 +1,28 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-/* #98CD00 */
-@plugin "daisyui" {
-  themes: forest --default, dark --autumn, lemonade, sunset;
+/* Linear gradient background for root */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #12161f, #101d34, #01091b);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
-/* @plugin "daisyui/theme" {
 
-  --text-[var(--color-primary)]: #98CD00 ;
-  
-} */
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Removed daisyUI references */
 
 /* CSS custom property for animation */
 @property --border-angle {
@@ -24,21 +34,25 @@
 /* gradient border class */
 .gradient-border {
   --border-angle: 0deg;
-  padding: 2px; /* border thickness */
+  
   border-radius: 1rem;
   background: 
     linear-gradient(45deg, #080b11, #1e293b 50%, #172033) padding-box, 
     conic-gradient(from var(--border-angle), rgba(148,163,184,0.48) 80%, #6366f1 86%, #93c5fd 90%, #6366f1 94%, rgba(148,163,184,0.48)) border-box;
   border: 4px solid transparent;
 }
+.gradient-border-btn {
+  --border-angle: 0deg;
+ 
+  border-radius: 1rem;
+  background: 
+    linear-gradient(45deg, #030e24, #1e293b 50%, #172033) padding-box, 
+    conic-gradient(from var(--border-angle), rgba(148,163,184,0.48) 80%, #6366f1 86%, #93c5fd 90%, #6366f1 94%, rgba(148,163,184,0.48)) border-box;
+  border-bottom: 3px solid transparent;
+}
 
 /* inner content card */
-.gradient-border > .card {
-  border-radius: calc(1rem - 2px);
-  background-color: #0f172a; /* dark card bg */
-  padding: 2rem;
-  text-align: center;
-}
+
 
 /* Tailwind animation keyframe */
 @keyframes border {
@@ -52,13 +66,13 @@
 
 
 .bg-color{
-  background-color: #00F0A0;
+  background-color: #6366f1;
 }
 .active {
-  color: #00F0A0;  /* highlight color */
-  border-bottom: 2px solid #00F0A0; 
+  color: #6366f1;  /* highlight color */
+  border-bottom: 2px solid #6366f1; 
 }
 /* #00f0a0, #03f0a2 */
 :root {
-  --color-primary: #00F0A0;
+  --color-primary: #6366f1;
 }
