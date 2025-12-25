@@ -115,7 +115,7 @@ const Projects = () => {
             </div>
             <div className="space-y-3   p-2 rounded-[8px] flex flex-col justify-between flex-2 ">
               <h3 className="text-xl font-semibold  mb-2">{project.name}</h3>
-              <p className=" ">{project.subTitle}</p>
+              <p className=" text-center md:text-start">{project.subTitle}</p>
               <p className="  mb-4 flex flex-wrap gap-2">
                 <span className="font-bold ">Stack: </span>{" "}
                 {project.stack.map((s) => (
