@@ -113,7 +113,7 @@ const Projects = () => {
                 className="rounded-lg w-full h-full object-cover mb-4 md:mb-0 hover:scale-105 transition-all duration-200 ease-in-out"
               />
             </div>
-            <div className="space-y-3  bg-base-100 p-2 rounded-[8px] flex flex-col justify-between flex-2 ">
+            <div className="space-y-3   p-2 rounded-[8px] flex flex-col justify-between flex-2 ">
               <h3 className="text-xl font-semibold  mb-2">{project.name}</h3>
               <p className=" ">{project.subTitle}</p>
               <p className="  mb-4 flex flex-wrap gap-2">
